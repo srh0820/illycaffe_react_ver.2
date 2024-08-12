@@ -1,0 +1,37 @@
+.company {
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    .comdiv {
+        overflow: hidden;
+        margin-left: 48px;
+        width: 100%;
+        max-width: 1920px;
+        .comtext {
+            height: 253px;
+            h2 {
+                font-family: "Noto Sans KR";
+                font-size: 29px;
+                font-weight: 700;
+                line-height: 141%; /* 40.89px */
+                letter-spacing: -1.45px;
+            }
+            .btn {              
+                margin-top: 25px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                font-family: "Noto Sans KR";
+                font-size: 16px;
+                font-weight: 500;
+                color: #ffffff;
+                background-color: #D9261C;
+                border-radius: 30px;
+                width: 160px;
+                height: 42px;
+                text-align: center;
+                letter-spacing: -0.8px;              
+            }
+        }
+    }
+}
