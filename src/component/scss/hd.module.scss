@@ -1,0 +1,106 @@
+.hd {
+    position: relative;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    width: 100%;
+    h1 {
+        width: 0;
+        img {
+            width: 64px;
+        }
+    }
+    .gnb {
+        &:before {
+            content: "";
+            align-items: center;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            height: 0;
+            width: 100%;
+            transition: 0.5s;
+            background-color: rgb(255, 255, 255, 0.8);
+        }
+        &:hover {
+            &:before {
+                height: 180px !important;
+            }
+        }
+        .gnb_d1_li { // 대메뉴
+            .gnb_d1_a { 
+                font-family: "Roboto Condensed";
+                font-size: 1.0625rem;
+                font-weight: 500;
+                color: #ffffff;
+                
+            }
+            &:hover { 
+                ul {     
+                    max-height: 180px;
+                }
+            }
+            &:hover { 
+                > a {
+                    color: #D9261C;
+                }
+            }
+            
+            .d2_ul{ // 소메뉴
+                max-height: 0;
+                transition: max-height 0.5s; 
+                overflow: hidden;
+                white-space: nowrap;
+                left: -1rem;
+                padding: 0 1rem !important;
+                border: 0 !important;
+                line-height: 2rem;
+                letter-spacing: -0.85px;
+                left: 50%;
+                transform: translateX(-50%);
+                text-align: center;
+                font-size: 1.0625rem;
+                &:before,
+                &:after {  
+                    content: "";
+                    display: block;
+                    height: 3rem;
+                }
+                a {
+                    font-family: "Noto Sans KR";
+                    font-size: 1.0625rem;
+                    font-weight: 500;
+                    color: #333333;
+                }
+                li:hover { 
+                    > a {
+                        color: #D9261C;
+                    }
+                }
+            }
+        }
+    }
+    .iconMenu {
+        width: 64px;
+        li {
+            svg {
+                &:hover {
+                    path {
+                        fill: #D9261C;
+                    }
+                }
+            }
+            a {
+                font-family: "Noto Sans KR";
+                font-size: 0.875rem;
+                font-weight: 500;
+                color: #ffffff;
+                letter-spacing: -0.85px;
+                &:hover {
+                    color: #D9261C;
+                }
+            }
+        }
+    }
+}
