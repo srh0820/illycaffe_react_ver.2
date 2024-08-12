@@ -1,0 +1,35 @@
+body *{
+    font-family:  "Roboto Condensed", "Noto Sans KR", sans-serif;
+    color: #333;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.container-1400 {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-1824{
+    max-width: 1824px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+ul {
+    margin-left: 0;
+    padding-bottom: 0;
+}
+
+li {
+    list-style: none;
+}
