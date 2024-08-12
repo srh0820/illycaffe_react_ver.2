@@ -1,7 +1,7 @@
 import React from 'react'
 
 import pdscss from './scss/product.module.scss';
-import products from '../json/product.json'; 
+import products from '../json/productdata.json'; 
 
 function Product() {
     return (
