@@ -1,10 +1,7 @@
 import React from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
 
-import './scss/shop.scss';
 import shopscss from './scss/shop.module.scss';
-import shopData from '../json/shop.json';
+import Shopswiper from './shop/Shopswiper';
 
 function Shop() {
     return (
@@ -19,28 +16,9 @@ function Shop() {
                     </p>
                     <a href="/" className={shopscss.btn}>자세히보기</a>
                 </div>
-                <div className="shopswiper">
-                    <Swiper
-                        modules={[Autoplay]}
-                        slidesPerView="auto"
-                        spaceBetween={20}
-                        loop={true}
-                        speed={9000}
-                        autoplay={{
-                        delay: 0,
-                        disableOnInteraction: false,
-                        }}
-                        loopedSlides={shopData.length}
-                    >
-                        {shopData.map((slide, index) => (
-                        <SwiperSlide className='shopslide' key={index}>
-                            <img src={slide.img} alt={slide.title} />
-                            <p className="my-2">{slide.title}</p>
-                            <p className="mb-0">{slide.price}</p>
-                        </SwiperSlide>
-                        ))}
-                    </Swiper>
-                </div>
+                
+                <Shopswiper></Shopswiper>
+
             </div>
         </section>
     );
