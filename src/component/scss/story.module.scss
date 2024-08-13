@@ -1,0 +1,80 @@
+.story {
+    margin-bottom: 200px;
+    .inner {
+        height: 586px;
+        background: #F3EFE9;
+        .textArea {
+            padding-top: 94px;
+            padding-left: 212px;
+            h2 {
+                color: #333;
+                font-family: "Noto Sans KR";
+                font-size: 29px;
+                font-weight: 500;
+                line-height: 145%;
+                letter-spacing: -2.03px;
+            }
+            p {
+                color: #666;
+                font-family: "Noto Sans KR";
+                font-size: 15px;
+                font-weight: 300;
+                line-height: 145%;
+                letter-spacing: -1.2px;
+            }
+            .btn {              
+                margin-top: 60px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                font-family: "Noto Sans KR";
+                font-size: 16px;
+                font-weight: 500;
+                color: #ffffff;
+                background-color: #D9261C;
+                border-radius: 30px;
+                width: 160px;
+                height: 42px;
+                text-align: center;
+                letter-spacing: -0.8px;              
+            }
+        }
+        .valueAll {
+            padding-top: 94px;
+            padding-left: 151px;
+            .icon_wrapper {
+                width: 65px;
+                height: 65px;
+                background-color: #D9261C;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+            .mission ,
+            .values {
+                padding-right: 80px;
+            }
+            h3 {
+                color: #333;
+                font-family: "Noto Sans KR";
+                font-size: 25px;
+                font-weight: 500;
+                line-height: 150%; /* 37.5px */
+                letter-spacing: -1.25px;
+            }
+            p {
+                color: #333;
+                font-family: "Noto Sans KR";
+                font-size: 15px;
+                font-weight: 300;
+                line-height: 150%; /* 22.5px */
+                letter-spacing: -0.9px;
+            }
+        }
+    }
+}
