@@ -15,21 +15,20 @@ function Shopswiper() {
                 loop={true}
                 speed={9000}
                 autoplay={{
-                delay: 0,
-                disableOnInteraction: false,
+                    delay: 0,
+                    disableOnInteraction: false,
                 }}
-                loopedSlides={shopData.length}
             >
                 {shopData.map((slide, index) => (
-                <SwiperSlide className='shopslide' key={index}>
-                    <img src={slide.img} alt={slide.title} />
-                    <p className="my-2">{slide.title}</p>
-                    <p className="mb-0">{slide.price}</p>
-                </SwiperSlide>
+                    <SwiperSlide className='shopslide' key={index}>
+                        <img src={slide.img} alt={slide.title} />
+                        <p className="my-2">{slide.title}</p>
+                        <p className="mb-0">{slide.price}</p>
+                    </SwiperSlide>
                 ))}
             </Swiper>
         </div>
     )
 }
 
-export default Shopswiper
+export default Shopswiper;
