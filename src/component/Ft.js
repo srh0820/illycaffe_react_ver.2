@@ -8,7 +8,7 @@ import instagramIcon from '../img/instagramIcon.svg';
 import kakaotalkIcon from '../img/kakaotalkIcon.svg';
 
 function Ft() {
-    return (  // return 문을 추가
+    return (
         <footer className={ftscss.ft}>
             <div className={`${ftscss.ftdiv} container-1400`}>
                 <h1 className="ms-0 mb-0 py-5">

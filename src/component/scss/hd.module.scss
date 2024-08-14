@@ -4,6 +4,26 @@
     z-index: 99999;
     top: 0;
     width: 100%;
+    transition: 0.5s;
+    &:hover {
+        background-color: rgb(255, 255, 255, 0.8);
+        a {
+            color: #333 !important;
+            &:hover {
+                color: #D9261C !important;
+            }
+        }
+        svg {
+            path {
+                fill: #333;
+            }
+            &:hover {
+                path {
+                    fill: #D9261C;
+                }
+            }
+        }
+    }
     h1 {
         width: 0;
         img {
@@ -20,11 +40,13 @@
             right: 0;
             height: 0;
             width: 100%;
-            transition: 0.5s;
+            transition: 0.5s ease-out;
             background-color: rgb(255, 255, 255, 0.8);
+            border-top: transparent;
         }
         &:hover {
             &:before {
+                border-top: 1px solid #bbbbbb;
                 height: 180px !important;
             }
         }
@@ -34,14 +56,14 @@
                 font-size: 1.0625rem;
                 font-weight: 500;
                 color: #ffffff;
-                
             }
             &:hover { 
                 ul {     
                     max-height: 180px;
+                    > a {
+                        color: #D9261C;
+                    }
                 }
-            }
-            &:hover { 
                 > a {
                     color: #D9261C;
                 }
@@ -73,7 +95,7 @@
                     font-weight: 500;
                     color: #333333;
                 }
-                li:hover { 
+                li:hover {
                     > a {
                         color: #D9261C;
                     }

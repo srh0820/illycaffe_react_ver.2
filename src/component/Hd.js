@@ -26,7 +26,7 @@ function Hd() {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []); // 빈 배열을 전달하여 컴포넌트가 처음 렌더링될 때만 실행
+    }, []);
 
     return (
         <header id="hd" className={hdscss.hd}>
