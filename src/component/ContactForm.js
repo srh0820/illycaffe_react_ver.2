@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import cntFormscss from './scss/contactForm.module.scss';
+import FormFields from './ContactForm/FormFields';  
 
 function ContactForm() {
     const [formData, setFormData] = useState({
@@ -19,7 +20,6 @@ function ContactForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // submit_form.php 대신 백엔드와 통신하거나 폼 데이터를 처리하는 로직을 여기에 추가하기
         console.log('Form submitted:', formData);
     };
 
@@ -35,53 +35,16 @@ function ContactForm() {
                             <p className="mb-0">UDC@illycaffe.co.kr</p>
                         </div>
                     </div>
-                    <div className={cntFormscss.form}>
-                        <form onSubmit={handleSubmit}>
-                            <div className={cntFormscss.form_group}>
-                                <input
-                                    type="text"
-                                    className={cntFormscss.input_field}
-                                    id="name"
-                                    name="name"
-                                    value={formData.name}
-                                    onChange={handleChange}
-                                    placeholder="   성명"
-                                    required
-                                />
-                            </div>
-                            <div className={cntFormscss.form_group}>
-                                <input
-                                    type="email"
-                                    className={cntFormscss.input_field}
-                                    id="email"
-                                    name="email"
-                                    value={formData.email}
-                                    onChange={handleChange}
-                                    placeholder="   이메일"
-                                    required
-                                />
-                            </div>
-                            <div className={cntFormscss.form_group}>
-                                <textarea
-                                    id="message"
-                                    className={cntFormscss.msg_field}
-                                    name="message"
-                                    value={formData.message}
-                                    onChange={handleChange}
-                                    placeholder="   문의 내용"
-                                    required
-                                />
-                            </div>
-                            <div className={cntFormscss.form_group}>
-                                <button type="submit" className={cntFormscss.btn_field}>보내기</button>
-                            </div>
-                        </form>
-                    </div>
+                    <FormFields
+                        formData={formData}
+                        handleChange={handleChange}
+                        handleSubmit={handleSubmit}
+                    />
                 </div>
                 <div className={`${cntFormscss.imgArea} col-6`}></div>
             </div>
         </section>
     );
-};
+}
 
 export default ContactForm;
