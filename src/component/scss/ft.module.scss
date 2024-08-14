@@ -1,0 +1,33 @@
+.ft {
+    background-color: #D9261C;
+   .ftdiv {
+        overflow-x: hidden;
+        height: 520px;
+        .gnb {
+            li { 
+                a {
+                    font-family: "Noto Sans KR";
+                    font-size: 17px;
+                    font-weight: 400;
+                    color: #fff;
+                }
+            }
+        }
+        .ftText {
+            p {
+                font-family: "Noto Sans KR";
+                font-size: 15px;
+                font-weight: 400;
+                color: #fff;
+            }
+            .ftTextIcon {
+                p {
+                    font-family: "Noto Sans KR";
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
