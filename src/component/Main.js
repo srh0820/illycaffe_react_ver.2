@@ -2,8 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import mainscss from './scss/main.module.scss';
+import Button from './styled/btn';
 
-const Main = () => {
+function Main() {
     return (
         <section className={mainscss.main}>
             <div className={`${mainscss.mainBanner} d-flex align-items-center`}>
@@ -17,9 +18,9 @@ const Main = () => {
                         <p className={`${mainscss.mainText2} ms-2`}>
                             일리커피는 아라비카 원두만을 사용하여 독보적인 블렌딩으로 탄생했습니다
                         </p>
-                        <Link to="/" className={`${mainscss.btn} ms-2`}>
+                        <Button as={Link} to="/" className={`${mainscss.btn} ms-2`}>
                             자세히보기
-                        </Link>
+                        </Button>
                     </div>
                 </div>
             </div>

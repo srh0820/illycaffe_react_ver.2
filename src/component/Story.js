@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import storyscss from './scss/story.module.scss';
+import Button from './styled/btn';
 
 import coffeeIcon from '../img/coffeeIcon.svg';
 import earthIcon from '../img/earthIcon.svg';
@@ -17,7 +19,9 @@ function Story() {
                         콩에서 컵까지, 우리는 지구에 긍정적인 영향을 미치겠다는 목표를 함께 키워갑니다. <br />
                         품질과 지속 가능성은 함께 이루어져야 하는 지속적인 개선의 길입니다.
                     </p>
-                    <a href="/" className={storyscss.btn}>자세히보기</a>
+                    <Button as={Link} to="/" className={storyscss.btn}>
+                        자세히보기
+                    </Button>
                 </div>
 
                 <div className={`${storyscss.valueAll} col-6 d-flex`}>

@@ -1,7 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 import shopscss from './scss/shop.module.scss';
 import Shopswiper from './shop/Shopswiper';
+import Button from './styled/btn';
 
 function Shop() {
     return (
@@ -14,7 +16,9 @@ function Shop() {
                         <br />
                         커피 머신과 디자이너 컵 그리고 액세서리들이 준비되어 있습니다.
                     </p>
-                    <a href="/" className={shopscss.btn}>자세히보기</a>
+                    <Button as={Link} to="/">
+                        자세히보기
+                    </Button>
                 </div>
                 
                 <Shopswiper></Shopswiper>
