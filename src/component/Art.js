@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import YouTube from 'react-youtube';
+
 import artscss from './scss/art.module.scss';
 
-const Art = () => {
+function Art() {
     const [showVideo, setShowVideo] = useState(false);
 
     const handlePlayButtonClick = () => {
@@ -27,7 +28,7 @@ const Art = () => {
                 <div className={`${artscss.videoArea} d-flex justify-content-center`}>
                     {!showVideo ? (
                         <div className={artscss.thumbnail} onClick={handlePlayButtonClick}>
-                            <img src="/img/artcolletion.jpg" alt="Custom Thumbnail" />
+                            <img src="/img/artColletion.jpg" alt="Custom Thumbnail" />
                             <button className={artscss.playButton} aria-label="Play Video"></button>
                         </div>
                     ) : (
