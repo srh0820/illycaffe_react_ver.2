@@ -124,5 +124,22 @@
                 }
             }
         }
+        .search {
+            position: relative;
+            .searchIconActive {
+                    svg path {
+                        fill: #D9261C;
+                    }
+            }
+            input {
+                position: absolute;
+                left: -220px;
+                width: 200px;
+                border: 1px solid #bbbbbb;
+                outline: none;
+                font-size: 1rem;
+                padding: 5px 10px;
+            }
+        }
     }
 }
