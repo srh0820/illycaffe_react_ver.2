@@ -4,7 +4,7 @@ import Company from './component/Company';
 import Art from './component/Art';
 import Shop from './component/Shop';
 import Story from './component/Story';
-import ContactForm from './component/ContactForm';
+import Contact from './component/Contact';
 
 
 function Illy() {
@@ -16,7 +16,7 @@ function Illy() {
       <Art></Art>
       <Shop></Shop>
       <Story></Story>
-      <ContactForm></ContactForm>
+      <Contact></Contact>
     </>
   );
 }

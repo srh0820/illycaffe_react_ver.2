@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
 import cntFormscss from './scss/contactForm.module.scss';
-import FormFields from './contactForm/FormFields';  
+import FormFields from './contact/FormFields';  
 
-function ContactForm() {
+function Contact() {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -47,4 +47,4 @@ function ContactForm() {
     );
 }
 
-export default ContactForm;
+export default Contact;
