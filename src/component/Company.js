@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import cpscss from './scss/company.module.scss';
 import Comswiper from './company/Comswiper';
-import Button from './styled/btn';
+import Button from './styled/Button';
 
 function Company() {
     const [isVisible, setIsVisible] = useState(false);

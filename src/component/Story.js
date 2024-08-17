@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import storyscss from './scss/story.module.scss';
-import Button from './styled/btn';
+import Button from './styled/Button';
 
 import coffeeIcon from '../img/coffeeIcon.svg';
 import earthIcon from '../img/earthIcon.svg';

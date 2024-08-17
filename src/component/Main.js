@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import mainscss from './scss/main.module.scss';
-import Button from './styled/btn';
+import Button from './styled/Button';
 
 function Main() {
     return (

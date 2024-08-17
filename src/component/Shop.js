@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import shopscss from './scss/shop.module.scss';
 import Shopswiper from './shop/Shopswiper';
-import Button from './styled/btn';
+import Button from './styled/Button';
 
 function Shop() {
     return (

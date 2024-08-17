@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import cntFormscss from './scss/contactForm.module.scss';
-import FormFields from './ContactForm/FormFields';  
+import FormFields from './contactForm/FormFields';  
 
 function ContactForm() {
     const [formData, setFormData] = useState({
