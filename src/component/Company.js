@@ -40,7 +40,7 @@ function Company() {
                         커피 브랜드입니다. 일리만의 맛과 느낌, 아로마 향이 있습니다. <br />
                         이것은 일리의 사명이자 열정, 그리고 의무입니다.
                     </h2>
-                    <Button as={Link} to="/">
+                    <Button as={Link} to="/" className='mb-4'>
                         자세히보기
                     </Button>
                 </div>

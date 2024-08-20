@@ -60,39 +60,33 @@ function Comswiper() {
           </Swiper>
         ) : (
           <div className={comscss.mobile}>
-            {companyData.map((slide, index) => (
-              <div 
-                className={comscss.imgdiv}
-                key={index} 
-                style={{ 
-                    backgroundImage: `url(${slide.image})`, }}
-                >
-                <div className={'dark_overlay'}></div>
-                <div className={'textarea'}>
-                  <h3 className="ms-4 mt-4 mb-0">{slide.title}</h3>
-                  <p className="ms-4 mb-0">
-                    {slide.description.split('|').map((line, idx) => (
-                      <React.Fragment key={idx}>
-                        {line}
-                        {idx < slide.description.split('|').length - 1 && <br />}
-                      </React.Fragment>
-                    ))}
-                  </p>
-                  <i className={'arrow'}>
-                    <svg className={'white'} width="32" height="32" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fillRule="evenodd" clipRule="evenodd" d="M4.64645 1.64645C4.84171 1.45118 5.15829 1.45118 5.35355 1.64645L11.3536 7.64645C11.5488 7.84171 11.5488 8.15829 11.3536 8.35355L5.35355 14.3536C5.15829 14.5488 4.84171 14.5488 4.64645 14.3536C4.45118 14.1583 4.45118 13.8417 4.64645 13.6464L10.2929 8L4.64645 2.35355C4.45118 2.15829 4.45118 1.84171 4.64645 1.64645Z" fill="#ffffff"/>
-                    </svg>
-                    <svg className={'red'} width="32" height="32" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fillRule="evenodd" clipRule="evenodd" d="M4.64645 1.64645C4.84171 1.45118 5.15829 1.45118 5.35355 1.64645L11.3536 7.64645C11.5488 7.84171 11.5488 8.15829 11.3536 8.35355L5.35355 14.3536C5.15829 14.5488 4.84171 14.5488 4.64645 14.3536C4.45118 14.1583 4.45118 13.8417 4.64645 13.6464L10.2929 8L4.64645 2.35355C4.45118 2.15829 4.45118 1.84171 4.64645 1.64645Z" fill="#D9261C"/>
-                    </svg>                               
-                  </i>
+            <div className='row mx-0 d-flex justify-content-between'>
+              {companyData.map((slide, index) => (
+                <div 
+                  className={`${comscss.imgdiv} col-6 px-0 mb-3`}
+                  key={index} 
+                  style={{ 
+                      backgroundImage: `url(${slide.image})`, }}
+                  >
+                  <div className={comscss.dark_overlay}></div>
+                  <div className={`${comscss.textarea} d-flex align-items-center`}>
+                    <h3 className="ms-4 mb-0">{slide.title}</h3>
+                    <i className={comscss.arrow}>
+                      <svg className={comscss.white} width="28" height="28" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fillRule="evenodd" clipRule="evenodd" d="M4.64645 1.64645C4.84171 1.45118 5.15829 1.45118 5.35355 1.64645L11.3536 7.64645C11.5488 7.84171 11.5488 8.15829 11.3536 8.35355L5.35355 14.3536C5.15829 14.5488 4.84171 14.5488 4.64645 14.3536C4.45118 14.1583 4.45118 13.8417 4.64645 13.6464L10.2929 8L4.64645 2.35355C4.45118 2.15829 4.45118 1.84171 4.64645 1.64645Z" fill="#ffffff"/>
+                      </svg>
+                      <svg className={comscss.red} width="28" height="28" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fillRule="evenodd" clipRule="evenodd" d="M4.64645 1.64645C4.84171 1.45118 5.15829 1.45118 5.35355 1.64645L11.3536 7.64645C11.5488 7.84171 11.5488 8.15829 11.3536 8.35355L5.35355 14.3536C5.15829 14.5488 4.84171 14.5488 4.64645 14.3536C4.45118 14.1583 4.45118 13.8417 4.64645 13.6464L10.2929 8L4.64645 2.35355C4.45118 2.15829 4.45118 1.84171 4.64645 1.64645Z" fill="#D9261C"/>
+                      </svg>                               
+                    </i>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         )}
       </>
     );
   }
 
-export default Comswiper
+export default Comswiper;

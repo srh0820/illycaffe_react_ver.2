@@ -41,7 +41,8 @@
 @media (max-width: 768px) {
     .company {
         .comdiv {
-            margin-left: 20px;
+            margin: 0 20px;
+            max-width: 100%;
             .comtext {
                 height: auto;
                 h2 {
@@ -50,11 +51,139 @@
             }
             .mobile {
                 .imgdiv {
+                    position: relative;
                     background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: right;
+                    overflow: hidden;
+                    height: 20vh;
+                    max-width: 347.5px;
+                    img {
+                        float: left;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: left;
+                    }
+                    .dark_overlay {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.3);
+                        z-index: 1;
+                    }
+                    .textarea {
+                        position: absolute;
+                        z-index: 2;
+                        width: 100%;
+                        left: 0;
+                        bottom: 0;
+                        height: 4rem;
+                        background: rgba(255, 255, 255, 0.40);
+                        backdrop-filter: blur(2px);
+                        h3 {
+                            color: #fff;
+                            font-size: 1.2rem;
+                        }
+                        .arrow {
+                            display: block;
+                            position: absolute;
+                            right: 3%;
+                            width: 28px;
+                            height: 28px;
+                            overflow: hidden;
+                            svg {
+                                position: absolute;
+                                right: 0;
+                                height: auto !important;
+                                &.white {
+                                    transition: opacity 0.2s, margin-right 0.2;
+                                }
+                                &.red {
+                                    opacity: 0;
+                                    right: 28px;
+                                    transition: opacity 0.2s, right 0.2;
+                                }
+                            }
+                            &:hover{
+                                svg {
+                                    &.white {
+                                        animation: arrowAnimationBefore 0.3s forwards;
+                                    }
+                                    &.red {
+                                        animation: arrowAnimationAfter 0.3s forwards 0.3s;
+                                    }
+                                }
+                            }
+                        }
+                        @keyframes arrowAnimationBefore {
+                            from {
+                                margin-right: 0;
+                                opacity: 1;
+                            }
+                            to {
+                                margin-right: -28px;
+                                opacity: 0;
+                            }
+                        }
+                        @keyframes arrowAnimationAfter {              
+                            from {
+                                right: 28px;
+                                opacity: 0;
+                            }
+                            to {
+                                right: 0;
+                                opacity: 1;
+                            }
+                        } 
+                    }
                 }
-                
             }
         }
     }
     
+}
+
+@media (max-width: 670px) {
+    .company {
+        .comdiv {
+            .mobile {
+                .imgdiv {
+                    max-width: 299px;
+                    .textarea {
+                        h3 {
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 610px) {
+    .company {
+        .comdiv {
+            .comtext {
+                h2 {
+                    font-size: 20px;
+                }
+            }
+            .mobile {
+                .imgdiv {
+                    max-width: 347.5px;
+                    .textarea {
+                        h3 {
+                            font-size: 1rem;
+                            margin-left: 16px !important;
+                        }
+                        .arrow {
+                            top : -80%;
+                        }
+                    }
+                }
+            }
+        }
+    } 
 }
