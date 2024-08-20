@@ -163,36 +163,3 @@
         }
     }
 }
-
-@media (max-width: 768px) {
-    .product {
-        .productUl {
-            .productBox {
-                .hoverBox {
-                    height: 280px;
-                    &:hover {
-                        .prdImg {
-                            transform: translateX(-87%);
-                        }
-                    }
-                    .textarea {
-                        .titletext {
-                            font-size: 1.25rem;
-                        }
-                        .subtext {
-                            font-size: 0.875rem;
-                        }
-                    }
-                    .imgarea {
-                        .prdImg {
-                            right: -18%;
-                            img {
-                                width: 90%;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}

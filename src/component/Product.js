@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay,  Pagination } from 'swiper/modules';
 
+import './scss/product.scss';
 import pdscss from './scss/product.module.scss';
 import products from '../json/productdata.json'; 
 
@@ -23,23 +25,32 @@ function Product() {
         <section className={pdscss.product}>
             {isSlide ? (
                 <Swiper 
+                    className={'productswiper'}
+                    modules={[Autoplay, Pagination]}
                     slidesPerView={1} 
-                    pagination={{ clickable: true }}
-                    loop={true}
+                    pagination={{ clickable: true }} 
+                    loop={true} 
+                    autoplay={{ 
+                        delay: 4000,  
+                        disableOnInteraction: false,
+                    }}
+                  
                 >
                     {products.map((product, index) => (
-                        <SwiperSlide key={index}>
-                            <div className={pdscss.productBox}>
-                                <div className={`${pdscss.hoverBox} d-flex`}>
-                                    <div className={pdscss.textarea}>
-                                        <p className={pdscss.titletext}>{product.title}</p>
-                                        <p className={pdscss.subtext}>
+                        <SwiperSlide 
+                            key={index}
+                            className={'slide'}>
+                            <div className={'productBox'}>
+                                <div className={`${'hoverBox'} d-flex`}>
+                                    <div className={'textarea'}>
+                                        <p className={'titletext'}>{product.title}</p>
+                                        <p className={'subtext'}>
                                             {product.description.split('|')[0]}<br />
                                             {product.description.split('|')[1]}
                                         </p>
                                     </div>
-                                    <div className={pdscss.imgarea}>
-                                        <div className={pdscss.prdImg}>
+                                    <div className={'imgarea'}>
+                                        <div className={'prdImg'}>
                                             <img src={product.image} alt={product.alt} />
                                         </div>
                                     </div>
