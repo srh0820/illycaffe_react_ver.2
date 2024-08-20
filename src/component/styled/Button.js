@@ -40,6 +40,11 @@ const Button = styled.button`
     &:hover::before {
         bottom: 0;
     }
+    
+    @media (max-width: 768px) {
+        width: 120px;
+        height: 36px;
+    }
 `;
 
 export default Button;
