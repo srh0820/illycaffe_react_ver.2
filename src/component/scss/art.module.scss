@@ -75,9 +75,14 @@
     }
 }
 
+@media (max-width: 768px) {
+    .art {
+        margin-bottom: 365px;
+    }
+}
+
 @media (max-width: 626px) {
     .art {
-        margin-bottom: 430px;
         .box {
             .textArea {
                 top: 230px;
@@ -88,7 +93,6 @@
 
 @media (max-width: 480px) {
     .art {
-        margin-bottom: 350px;
         .box {
             .videoArea {
                 .playButton {
