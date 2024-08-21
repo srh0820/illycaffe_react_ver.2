@@ -20,8 +20,13 @@
         "image": "img/brand4.jpg"
     },
     {
-        "title": "The unique illy blend",
+        "title": "The Unique Illy Blend",
         "description": "최고급 원두로 시작하여 한 잔의 완벽한 | 완성된 커피로 잊을 수 없는 경험을 제공합니다.",
         "image": "img/brand5.jpg"
+    },
+    {
+        "title": "Secrets Of The Illy Blend",
+        "description": "로스팅과 냉각 전 완벽하게 블랜딩되며 신선한 맛과 | 아로마가 질소 압축포장으로 보존됩니다.",
+        "image": "img/brand6.jpg"
     }
 ]
