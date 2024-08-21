@@ -45,6 +45,10 @@ const Button = styled.button`
         width: 120px;
         height: 36px;
     }
+
+    @media (max-width: 480px) {
+        display : none;
+    }
 `;
 
 export default Button;
