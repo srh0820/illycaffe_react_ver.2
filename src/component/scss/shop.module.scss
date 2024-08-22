@@ -8,7 +8,7 @@
         width: 100%;
         max-width: 1920px;
         .shoptext {
-            height: 226px;
+            // height: 226px;
             h2 {
                 font-family: "Noto Sans KR";
                 font-size: 29px;
@@ -25,6 +25,9 @@
                 .short_text {
                     display: none;
                 }
+            }
+            .btn {
+                margin-top: 60px;
             }
         }
     }
@@ -45,7 +48,9 @@
                         display: inline;
                     }  
                 }
-                
+                .btn {
+                    margin-top: 40px;
+                }
             }
         }
     }

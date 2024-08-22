@@ -23,7 +23,7 @@ function Shopswiper() {
                     <SwiperSlide className='shopslide' key={index}>
                         <img src={slide.img} alt={slide.title} />
                         <p className="my-2">{slide.title}</p>
-                        <p className="mb-0">{slide.price}</p>
+                        <p className="price mb-0">{slide.price}</p>
                     </SwiperSlide>
                 ))}
             </Swiper>

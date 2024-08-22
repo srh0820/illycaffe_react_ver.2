@@ -8,12 +8,11 @@
         width: 100%;
         max-width: 1920px;
         .comtext {
-            height: 253px;
             h2 {
                 font-family: "Noto Sans KR";
                 font-size: 29px;
                 font-weight: 700;
-                line-height: 141%;
+                line-height: 120%;
                 letter-spacing: -1.45px;
                 opacity: 0;
                 transform: translateY(50px);
@@ -21,7 +20,7 @@
                 .short_text {
                     display: none;
                 }
-            }
+            } 
         }
     }
     @keyframes slideIn {

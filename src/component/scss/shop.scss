@@ -15,10 +15,13 @@
             p {
                 color: #000;
                 font-family: "Noto Sans KR";
-                font-size: 17px;
+                font-size: 15px;
                 font-weight: 500;
                 line-height: 100%; /* 17px */
                 letter-spacing: -0.85px;
+            }
+            .price {
+                font-weight: 700;
             }
         }
     }          

@@ -6,7 +6,7 @@ const Button = styled.button`
     justify-content: center;
     text-align: center;
     font-family: "Noto Sans KR";
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
     letter-spacing: -0.8px;
     color: #ffffff;

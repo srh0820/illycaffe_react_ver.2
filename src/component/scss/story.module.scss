@@ -7,7 +7,6 @@
             padding-top: 94px;
             padding-left: 212px;
             h2 {
-                color: #333;
                 font-family: "Noto Sans KR";
                 font-size: 29px;
                 font-weight: 500;
@@ -15,7 +14,6 @@
                 letter-spacing: -2.03px;
             }
             p {
-                color: #666;
                 font-family: "Noto Sans KR";
                 font-size: 15px;
                 font-weight: 300;
@@ -33,32 +31,36 @@
             padding-top: 94px;
             padding-left: 151px;
             .icon_wrapper {
-                width: 65px;
-                height: 65px;
+                width: 4rem;
+                height: 4rem;
                 background-color: #D9261C;
                 border-radius: 50%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 img {
-                    width: 45px;
-                    height: 45px;
+                    width: 2.8rem;
+                    height: 2.8rem;
                 }
             }
-            .mission ,
-            .values {
-                padding-right: 80px;
+            .alldiv {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 2rem;
+            }
+            .mission, .vision, .values, .strategy {
+                display: flex;
+                flex-direction: column;
+                gap: 0.3rem;
             }
             h3 {
-                color: #333;
                 font-family: "Noto Sans KR";
-                font-size: 25px;
+                font-size: 24px;
                 font-weight: 500;
                 line-height: 150%; /* 37.5px */
                 letter-spacing: -1.25px;
             }
             p {
-                color: #333;
                 font-family: "Noto Sans KR";
                 font-size: 15px;
                 font-weight: 300;

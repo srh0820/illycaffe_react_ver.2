@@ -47,7 +47,7 @@ function Company() {
                             이것은 일리의 사명이자 열정, 그리고 의무입니다.
                         </span>
                     </h2>
-                    <Button as={Link} to="/" className='mb-4'>
+                    <Button as={Link} to="/" className={`${cpscss.btn} mb-5`}>
                         자세히보기
                     </Button>
                 </div>
