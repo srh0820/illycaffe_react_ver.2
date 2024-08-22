@@ -13,6 +13,7 @@ import logo from '../img/Logo.svg'
 function Hd() {
     const [isSearchVisible, setIsSearchVisible] = useState(false);
     const [placeholderIndex, setPlaceholderIndex] = useState(0);
+    const headerHeight = 96;
 
     const placeholders = [
         '정기구독 신청',
@@ -68,7 +69,8 @@ function Hd() {
                 </ul>
                 <ul className={`${hdscss.iconMenu} ps-0 mb-0 d-flex justify-content-end align-items-center`}>
                     <li>
-                        <ScrollLink to="contact_section" duration={300} className="text-nowrap mb-0">
+                        <ScrollLink 
+                            to="contact_section" duration={300} offset={-headerHeight}className="text-nowrap mb-0">
                             브랜드 제휴
                         </ScrollLink>
                     </li>
