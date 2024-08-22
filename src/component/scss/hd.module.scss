@@ -105,6 +105,7 @@
     .iconMenu {
         width: 0;
         li {
+            cursor: pointer;
             svg {
                 &:hover {
                     path {

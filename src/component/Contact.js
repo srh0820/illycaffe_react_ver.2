@@ -24,7 +24,7 @@ function Contact() {
     };
 
     return (
-        <section className={cntFormscss.contactForm}>
+        <section id='contact_section' className={cntFormscss.contactForm}>
             <div className={cntFormscss.conForm}>
                 <div className={`${cntFormscss.formArea} col-6`}>
                     <div className={cntFormscss.textbox}>

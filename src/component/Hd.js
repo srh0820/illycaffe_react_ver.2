@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link as ScrollLink } from 'react-scroll';
 import { Link } from 'react-router-dom';
 
 import './scss/hd.scss';
@@ -67,7 +68,9 @@ function Hd() {
                 </ul>
                 <ul className={`${hdscss.iconMenu} ps-0 mb-0 d-flex justify-content-end align-items-center`}>
                     <li>
-                        <Link to="/" className="text-nowrap mb-0">브랜드 제휴</Link>
+                        <ScrollLink to="contact_section" duration={300} className="text-nowrap mb-0">
+                            브랜드 제휴
+                        </ScrollLink>
                     </li>
                     <li className={`${hdscss.search} ms-4 d-flex align-items-center`}>
                         <i 
