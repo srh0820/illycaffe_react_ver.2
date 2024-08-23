@@ -27,19 +27,21 @@ function Contact() {
         <section id='contact_section' className={cntFormscss.contactForm}>
             <div className={cntFormscss.conForm}>
                 <div className={`${cntFormscss.formArea} col-6`}>
-                    <div className={cntFormscss.textbox}>
-                        <h2 className="mb-0">CONTACT US</h2>
-                        <p className="mb-0">서울 강남구 테헤란로13길 31-1 (일리빌딩)</p>
-                        <div className="d-flex">
-                            <p className="mb-0 me-3">02) 3460-4992</p>
-                            <p className="mb-0">UDC@illycaffe.co.kr</p>
+                    <div className={cntFormscss.boxWrapper}>
+                        <div className={cntFormscss.textbox}>
+                            <h2 className="ms-1 mb-0">CONTACT US</h2>
+                            <p className="ms-1 mb-0">서울 강남구 테헤란로13길 31-1 (일리빌딩)</p>
+                            <div className="d-flex ms-1">
+                                <p className="mb-0 me-3">02) 3460-4992</p>
+                                <p className="mb-0">UDC@illycaffe.co.kr</p>
+                            </div>
                         </div>
-                    </div>
-                    <FormFields
-                        formData={formData}
-                        handleChange={handleChange}
-                        handleSubmit={handleSubmit}
-                    />
+                        <FormFields
+                            formData={formData}
+                            handleChange={handleChange}
+                            handleSubmit={handleSubmit}
+                        />
+                    </div> 
                 </div>
                 <div className={`${cntFormscss.imgArea} col-6`}></div>
             </div>

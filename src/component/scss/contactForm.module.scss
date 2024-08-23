@@ -5,7 +5,7 @@
     align-items: center;
     .conForm {
         display: flex;
-        height: 574px;
+        height: 60vh;
         background-color: #F3EFE9;
         width: 100%;
         max-width: 1920px;
@@ -13,69 +13,59 @@
             margin: 0 auto;
             padding: 0;
             max-width: 960px;
-            .textbox {
-                padding-left: 14.6vw;
-                padding-top: 8.5vh;
-                h2 {
-                    font-family: "Noto Sans KR";
-                    font-size: 27px;
-                    font-weight: 500;
-                }
-                p {
-                    color: #666;
-                    font-family: "Noto Sans KR";
-                    font-size: 15px;
-                    font-weight: 400;
-                    line-height: 145%; /* 21.75px */
-                    letter-spacing: -1.2px;
-                }   
-            }
-            .form {
-                padding-left: 14.6vw;
-                .form_group {
-                    padding: 0;
-                    .input_field {
-                        padding: 0;
-                        margin-bottom: 2px;
-                        width: 403px;
-                        height: 43px;
-                        border: 1px solid #E8E7E4;
-                        color: #666;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .boxWrapper {
+                max-width: 400px;
+                width: 100%;
+                .textbox {
+                    h2 {
                         font-family: "Noto Sans KR";
-                        font-size: 15px;
-                        font-weight: 400;
-                        line-height: 145%;
-                        letter-spacing: -1.2px;
-                    }
-                    .msg_field {
-                        padding: 0;
-                        margin-bottom: 2px;
-                        width: 403px;
-                        height: 165px;
-                        border: 1px solid #E8E7E4;
-                        color: #666;
-                        font-family: "Noto Sans KR";
-                        font-size: 15px;
-                        font-weight: 400;
-                        line-height: 250%;
-                        letter-spacing: -1.2px;
-                    }
-                    .btn_field {
-                        padding: 0;
-                        width: 403px;
-                        height: 43px;
-                        border: 1px solid #E8E7E4;
-                        background-color: #fff;
-                        color: #333;
-                        font-family: "Noto Sans KR";
-                        font-size: 15px;
+                        font-size: 27px;
                         font-weight: 500;
+                    }
+                    p {
+                        color: #666;
+                        font-family: "Noto Sans KR";
+                        font-size: 15px;
+                        font-weight: 400;
                         line-height: 145%;
                         letter-spacing: -1.2px;
-                        transition: 0.3s;
-                        &:hover {
-                            background-color: #c2c2c2;
-                            font-weight: 600;
+                    }   
+                }     
+                .form {
+                    .form_group {
+                        padding: 0;
+                        input, textarea, button {
+                            padding: 0;
+                            width: 100%;
+                            border: 1px solid #E8E7E4;
+                            color: #666;
+                            font-family: "Noto Sans KR";
+                            font-size: 15px;
+                            font-weight: 400;
+                            letter-spacing: -1.2px;
+                            margin-bottom: 2px;
+                        }
+                        .input_field, .btn_field {
+                            height: 43px;
+                            line-height: 145%;
+                        }
+                        .msg_field {
+                            height: 165px;
+                            line-height: 250%;
+                        }
+                        .btn_field {
+                            background-color: #fff;
+                            color: #333;
+                            font-weight: 500;
+                            transition: background-color 0.3s, font-weight 0.3s;
+                            &:hover {
+                                background-color: #c2c2c2;
+                                font-weight: 600;
+                            }
                         }
                     }
                 }
