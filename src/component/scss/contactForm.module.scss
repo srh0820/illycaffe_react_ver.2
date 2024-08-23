@@ -108,7 +108,7 @@
             height: 40vh;
             .formArea {
                 display: none;
-            }
+            }    
             .imgArea {
                 width: 100vw;
                 display: flex;
@@ -124,12 +124,73 @@
                         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
                     }
                     .iconButton {
-                        background-color: transparent;
+                        background: none;
                         border: none;
+                        cursor: pointer;
+                        padding: 0;
                         .arrow {
                             width: 3rem;
                             filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
                         }
+                    }
+                }
+            }
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1000; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .formOverlay {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background: #fff;
+                padding: 3rem;
+                border-radius: 5px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+                width: 90%;
+                max-width: 600px; 
+                .textbox {
+                    margin-bottom: 1rem; 
+                    width: 100%;
+                    h2 {
+                        font-size: 2rem;
+                        margin-bottom: 0.5rem;
+                        color: #333;
+                    }
+                    p {
+                        font-size: 1rem;
+                        color: #666;
+                    }
+                }
+                .form {
+                    width: 100%;
+                    background: #fff;
+                    .input {
+                        width: 100%;
+                    }
+                }
+                .closeButton {
+                    position: absolute;
+                    top: 1rem;
+                    right: 1rem;
+                    background: none;
+                    border: none;
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                    z-index: 1002;
+                    
+                    .closeicon {
+                        width: 1.5rem;
                     }
                 }
             }
