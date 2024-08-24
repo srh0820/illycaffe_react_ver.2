@@ -90,11 +90,10 @@ function Contact() {
                     <div className={cntFormscss.formOverlay}>
                         <div className={cntFormscss.textbox}>
                             <h2>CONTACT US</h2>
-                            <p className="mb-0">서울 강남구 테헤란로13길 31-1 (일리빌딩)</p>
-                            <div className="d-flex">
-                                <p className="mb-0 me-3">02) 3460-4992</p>
-                                <p className="mb-0">UDC@illycaffe.co.kr</p>
-                            </div>
+                            <p className="mb-0">서울 강남구 테헤란로13길 31-1</p>
+                            <p className="mb-0">02) 3460-4992</p>
+                            <p className="mb-0">UDC@illycaffe.co.kr</p>
+
                         </div>
                         <FormFields
                             formData={formData}

@@ -49,6 +49,9 @@
                             letter-spacing: -1.2px;
                             margin-bottom: 2px;
                         }
+                        input, textarea {
+                            padding-left: 0.7rem;
+                        }
                         .input_field, .btn_field {
                             height: 43px;
                             line-height: 145%;
@@ -150,11 +153,10 @@
             .formOverlay {
                 position: relative;
                 display: flex;
-                flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 background: #fff;
-                padding: 3rem;
+                padding: 3.5rem 2rem;
                 border-radius: 5px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
                 width: 90%;
@@ -162,8 +164,9 @@
                 .textbox {
                     margin-bottom: 1rem; 
                     width: 100%;
+                    height: 80%;
                     h2 {
-                        font-size: 2rem;
+                        font-size: 1.8rem;
                         margin-bottom: 0.5rem;
                         color: #333;
                     }
@@ -174,9 +177,22 @@
                 }
                 .form {
                     width: 100%;
+                    height: 80%;
                     background: #fff;
-                    .input {
-                        width: 100%;
+                    input, textarea, button {
+                        margin-bottom: 0.3rem;
+                        width: 90%;
+                        padding-left: 0.3rem;
+                    }
+                    textarea {
+                        height: 130px;
+                    }
+                    button {
+                        margin-bottom: 0;
+                        &:hover {
+                            background-color: #c2c2c2;
+                            font-weight: 600;
+                        }
                     }
                 }
                 .closeButton {
@@ -219,7 +235,7 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 540px) {
     .contactForm {
         .conForm {
             height: 24vh;
@@ -233,6 +249,23 @@
                         .arrow {
                             width: 1.5rem;
                         }
+                    }
+                }
+            }
+        }
+        .overlay {
+            .formOverlay {
+                flex-direction: column;
+                background: #fff;
+                .textbox {
+                    h2 {
+                        font-size: 1.5rem;
+                        margin-bottom: 0.3rem;
+                        color: #333;
+                    }
+                    p {
+                        font-size: 1rem;
+                        color: #666;
                     }
                 }
             }

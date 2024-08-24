@@ -14,7 +14,7 @@ const FormFields = ({ formData, handleChange, handleSubmit }) => {
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
-                        placeholder="   성명"
+                        placeholder="성명"
                         required
                     />
                 </div>
@@ -26,7 +26,7 @@ const FormFields = ({ formData, handleChange, handleSubmit }) => {
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
-                        placeholder="   이메일"
+                        placeholder="이메일"
                         required
                     />
                 </div>
@@ -37,7 +37,7 @@ const FormFields = ({ formData, handleChange, handleSubmit }) => {
                         name="message"
                         value={formData.message}
                         onChange={handleChange}
-                        placeholder="   문의 내용"
+                        placeholder="문의 내용"
                         required
                     />
                 </div>
