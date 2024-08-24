@@ -13,7 +13,7 @@ function Story() {
     return (
         <section className={storyscss.story}>
             <div className={`${storyscss.inner} container-1824 d-flex`}>
-                <div className={`${storyscss.textArea} col-6`}>
+                <div className={storyscss.textArea}>
                     <h2>지속 가능성 이야기</h2>
                     <p className='mb-0'>
                         콩에서 컵까지, 우리는 지구에 긍정적인 영향을 미치겠다는 목표를 함께 키워갑니다. <br />
@@ -24,7 +24,7 @@ function Story() {
                     </Button>
                 </div>
 
-                <div className={`${storyscss.valueAll} col-6 d-flex`}>
+                <div className={`${storyscss.valueAll} d-flex`}>
                     <div className={storyscss.alldiv}>
                         <div className={storyscss.mission}>
                             <div className={storyscss.icon_wrapper}>
