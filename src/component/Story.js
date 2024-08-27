@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
 import { Link } from 'react-router-dom';
 
 import storyscss from './scss/story.module.scss';
@@ -18,13 +20,15 @@ const iconMapping = {
 };
 
 function Story() {
-    const [valueAll, setValueAll] = useState(null);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 601);
 
     useEffect(() => {
-        setValueAll(storydata);
-    }, []);
+        const handleResize = () => setIsMobile(window.innerWidth < 601);
 
-    if (!valueAll) return null;  // 데이터가 로드되기 전까지는 아무것도 렌더링하지 않음
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     return (
         <section className={storyscss.story}>
@@ -47,27 +51,62 @@ function Story() {
                 </div>
 
                 <div className={`${storyscss.valueAll} d-flex`}>
-                    <div className={storyscss.alldiv}>
-                        {valueAll.sections.map((section, index) => (
-                            <div key={index} className={storyscss[section.title.toLowerCase()]}>
-                                <div className={storyscss.icon_wrapper}>
-                                    <img 
-                                        src={iconMapping[section.icon]} 
-                                        alt={`${section.title} 아이콘`} 
-                                    />
+                    {isMobile ? (
+                        <Swiper 
+                            modules={[Autoplay]}
+                            spaceBetween={10} 
+                            slidesPerView={1}
+                            loop={true}
+                            autoplay={{
+                                delay: 5000,
+                                disableOnInteraction: false,
+                            }}
+                        >   
+                            {storydata.sections.map((section, index) => (
+                                <SwiperSlide key={index}>
+                                    <div className={storyscss[section.title.toLowerCase()]}>
+                                        <div className={storyscss.icon_wrapper}>
+                                            <img 
+                                                src={iconMapping[section.icon]} 
+                                                alt={`${section.title} 아이콘`} 
+                                            />
+                                        </div>
+                                        <h3 className='mb-0'>{section.title}</h3>
+                                        <p className='mb-0'>
+                                            {section.text.split('|').map((line, index) => (
+                                                <React.Fragment key={index}>
+                                                    {index > 0 && <br />}
+                                                    {line}
+                                                </React.Fragment>
+                                            ))}
+                                        </p>
+                                    </div>
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    ) : (
+                        <div className={storyscss.alldiv}>
+                            {storydata.sections.map((section, index) => (
+                                <div key={index} className={storyscss[section.title.toLowerCase()]}>
+                                    <div className={storyscss.icon_wrapper}>
+                                        <img 
+                                            src={iconMapping[section.icon]} 
+                                            alt={`${section.title} 아이콘`} 
+                                        />
+                                    </div>
+                                    <h3 className='mb-0'>{section.title}</h3>
+                                    <p className='mb-0'>
+                                        {section.text.split('|').map((line, index) => (
+                                            <React.Fragment key={index}>
+                                                {index > 0 && <br />}
+                                                {line}
+                                            </React.Fragment>
+                                        ))}
+                                    </p>
                                 </div>
-                                <h3 className='mb-0'>{section.title}</h3>
-                                <p className='mb-0'>
-                                    {section.text.split('|').map((line, index) => (
-                                        <React.Fragment key={index}>
-                                            {index > 0 && <br />}
-                                            {line}
-                                        </React.Fragment>
-                                    ))}
-                                </p>
-                            </div>
-                        ))}
-                    </div>
+                            ))}
+                        </div>
+                    )}
                 </div>
             </div>
         </section>
