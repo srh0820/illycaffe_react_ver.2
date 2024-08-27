@@ -1,22 +1,24 @@
-[
+{
+  "sections": [
     {
       "title": "Mission",
-      "icon": "img/coffeeIcon.svg",
-      "description": "우리는 감각과 정신으로 즐길 수 있는|완벽한 한 잔의 커피를 위한 개발에|헌신하고 있습니다."
+      "text": "우리는 감각과 정신으로 즐길 수 있는 | 완벽한 한 잔의 커피를 위한 개발에 | 헌신하고 있습니다.",
+      "icon": "coffeeIcon.svg"
     },
     {
       "title": "Vision",
-      "icon": "img/earthIcon.svg",
-      "description": "우리의 꿈은 특별한 커피 문화를|전 세계 시장에 보급하는 것입니다."
+      "text": "우리의 꿈은 특별한 커피 문화를 | 전 세계 시장에 보급하는 것입니다.",
+      "icon": "earthIcon.svg"
     },
     {
       "title": "Values",
-      "icon": "img/beenIcon.svg",
-      "description": "우리는 커피 원두에서 컵으로 이어지는|가치기준의 모든 접점에|영감을 불어 넣는 것을 목표로 합니다."
+      "text": "우리는 커피 원두에서 컵으로 이어지는 | 가치기준의 모든 접점에 | 영감을 불어 넣는 것을 목표로 합니다.",
+      "icon": "beenIcon.svg"
     },
     {
       "title": "Strategy",
-      "icon": "img/cafeIcon.svg",
-      "description": "우리는 일리카페가 습득한 기술을 바탕으로|University of Coffee 센터를 설립하여|고품질 커피 문화를 교육하고 있습니다."
+      "text": "우리는 일리카페가 습득한 기술을 바탕으로 | University of Coffee 센터를 설립하여 | 고품질 커피 문화를 교육하고 있습니다.",
+      "icon": "cafeIcon.svg"
     }
-]
+  ]
+}
