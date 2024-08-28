@@ -45,7 +45,7 @@ function Story() {
                             미치겠다는 목표를 함께 키워갑니다.
                         </span>
                     </p>
-                    <Button as={Link} to="/" className={storyscss.btn}>
+                    <Button as={Link} to="/" className={`${storyscss.btn} mb-5`}>
                         자세히보기
                     </Button>
                 </div>
