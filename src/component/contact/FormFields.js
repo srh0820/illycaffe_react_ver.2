@@ -12,6 +12,7 @@ const FormFields = ({ formData, handleChange, handleSubmit }) => {
                         className={cntFormscss.input_field}
                         id="name"
                         name="name"
+                        autoComplete="name"
                         value={formData.name}
                         onChange={handleChange}
                         placeholder="성명"
@@ -24,6 +25,7 @@ const FormFields = ({ formData, handleChange, handleSubmit }) => {
                         className={cntFormscss.input_field}
                         id="email"
                         name="email"
+                        autoComplete="email"
                         value={formData.email}
                         onChange={handleChange}
                         placeholder="이메일"
