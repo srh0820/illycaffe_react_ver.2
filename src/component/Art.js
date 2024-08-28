@@ -16,7 +16,7 @@ function Art() {
 
     const opts = {
         height: '530',
-        width: '1400',
+        width: '100%',
         playerVars: {
             autoplay: 1, 
         },
@@ -32,7 +32,9 @@ function Art() {
                             <button className={artscss.playButton} aria-label="Play Video"></button>
                         </div>
                     ) : (
-                        <YouTube videoId="k9X1wxnneMs" opts={opts} onEnd={handleVideoEnd} />
+                        <div className={artscss.youtube_player}>
+                            <YouTube videoId="k9X1wxnneMs" opts={opts} onEnd={handleVideoEnd} />
+                        </div>
                     )}
                 </div>
                 <div className={artscss.textArea}>

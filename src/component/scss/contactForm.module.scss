@@ -214,40 +214,19 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 540px) {
     .contactForm {
         .conForm {
-            height: 24vh;
+            height: 30vh;
             .imgArea {
                 .overlayText {
                     h2 {
-                        font-size: 2rem;
+                        font-size: 2em;
                         letter-spacing: 0.2rem;
                     }
                     .iconButton {
                         .arrow {
                             width: 2rem;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 540px) {
-    .contactForm {
-        .conForm {
-            height: 24vh;
-            .imgArea {
-                .overlayText {
-                    h2 {
-                        font-size: 1.5rem;
-                        letter-spacing: 0.2rem;
-                    }
-                    .iconButton {
-                        .arrow {
-                            width: 1.5rem;
                         }
                     }
                 }

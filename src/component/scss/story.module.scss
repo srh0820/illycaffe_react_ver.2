@@ -192,6 +192,7 @@
 
 @media (max-width: 768px) {
     .story {
+        margin-bottom: 100px;
         .inner {
             .textArea {
                 padding-left: 20px;
@@ -260,6 +261,7 @@
                 p {
                     font-size: 14px;
                     letter-spacing: -1.2px;
+                    padding-bottom: 20px;
                 }
             }
             .valueAll {
