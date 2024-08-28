@@ -2,7 +2,6 @@
     background-color: #D9261C;
    .ftdiv {
         overflow-x: hidden;
-        height: 520px;
         .gnb {
             li { 
                 a {
@@ -15,17 +14,163 @@
         }
         .ftText {
             p {
-                font-family: "Noto Sans KR";
-                font-size: 15px;
-                font-weight: 400;
-                color: #fff;
-            }
-            .ftTextIcon {
-                p {
+                margin-bottom: 16px !important;
+                .default_text {
                     font-family: "Noto Sans KR";
                     font-size: 15px;
                     font-weight: 400;
                     color: #fff;
+                }
+                .short_text {
+                    display: none;
+                }
+            }
+            .ftTextIcon {
+                p, span {
+                    font-family: "Noto Sans KR";
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: #fff;
+                    margin-bottom: 0 !important;
+                }
+                .ftIcon {
+                    
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .ft {
+       .ftdiv {
+            padding: 0 48px;
+            .gnb {
+                li { 
+                    a {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 840px) {
+    .ft {
+       .ftdiv {
+            .ftText {
+                p {
+                    .default_text {
+                        font-size: 14px;
+                    }
+                }
+                .ftTextIcon {
+                    p, span {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .ft {
+       .ftdiv {
+            padding: 0 20px;
+            h1 {
+                padding: 24px 0 !important;
+                img {
+                    width: 60px;
+                }
+            }
+            .gnb {
+                padding-top: 0 !important;
+                padding-bottom: 24px !important;
+                li { 
+                    a {
+                        font-size: 14px;
+                    }
+                }
+            }
+            .ftText {
+                padding-top: 24px !important;
+                padding-bottom: 24px !important;
+                p {
+                    .default_text {
+                        display: none;
+                    }
+                    .short_text {
+                        display: block;
+                        font-family: "Noto Sans KR";
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #fff;
+                    }
+                }
+                .ftTextIcon {
+                    flex-direction: column;
+                    display: grid !important;
+                    justify-self: start;
+                    p, span {
+                        margin-bottom: 16px !important;
+                    }
+                    .ftIcon {
+                        display: flex !important;
+                        justify-content: start !important;
+                        padding-left: 0;
+                        li {
+                            &:nth-child(1) {
+                                margin-left: 0 !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .ft {
+       .ftdiv {
+            .gnb {
+                margin-left: auto;
+                flex-wrap: wrap;
+            }
+            .ftText {
+                p {
+                    .short_text {
+                        font-size: 12px;
+                    }
+                }
+                
+                .ftTextIcon {
+                    p, span {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .ft {
+       .ftdiv {
+            .ftText {
+                .ftTextIcon {
+                    p {
+                        .br {
+                            display: block !important;
+                            margin: 0 !important;
+                            height: 0 !important;
+                        }
+                        span {
+                            display: none;
+                        }
+                    }
                 }
             }
         }
