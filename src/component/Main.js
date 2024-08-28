@@ -7,7 +7,7 @@ import Button from './styled/Button';
 function Main() {
     return (
         <section className={mainscss.main}>
-            <div className={`${mainscss.mainBanner} d-flex align-items-center`}>
+            <div className={mainscss.mainBanner}>
                 <div className={mainscss.bgImg}>
                     <div className={mainscss.mainTextbox}>
                         <p className={`${mainscss.mainText1} ms-2`}>
