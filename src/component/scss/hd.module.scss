@@ -5,6 +5,10 @@
     top: 0;
     width: 100%;
     transition: 0.5s;
+    .hddiv {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
     &:hover {
         background-color: rgb(255, 255, 255, 0.8);
         a {
@@ -141,5 +145,144 @@
                 padding: 5px 10px;
             }
         }
+        .list {
+            display: none;
+        }
+    }
+    .slideMenu {
+        display: none;
     }
 }
+
+@media (max-width: 1200px) {
+    .hd {
+        .iconMenu {
+            li {
+                a {
+                    display: none;
+                
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .hd {
+        .hddiv {
+            background-color: #fff;
+        }
+        .gnb {
+            display: none !important;
+        }
+        .iconMenu {
+            li {
+                svg {
+                    path {
+                        fill: #333;
+                    }
+                }
+            }
+            .search {
+                display: none !important;
+            }
+            .list {
+                display: block !important;
+                button {
+                    background-color: transparent;
+                    border: none;
+                }
+            }
+        }
+        .slideMenu {
+            position: fixed;
+            top: 0;
+            right: -100%; 
+            width: 250px;
+            height: 100vh;
+            background-color: #fff;
+            color: #333;
+            transition: right 0.3s ease-in-out;
+            z-index: 1000;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            &.open {
+                right: 0; 
+            }
+            .menuHeader {
+                display: flex;
+                justify-content: flex-end;
+                .closeButton {
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                    padding: 0;
+                    margin-bottom: 20px;
+                    svg {
+                        path {
+                            fill: #333; 
+                        }
+                    }
+                }
+            }   
+            .slideGnb {
+                list-style: none;
+                padding: 0;
+                margin: 0;    
+                li {    
+                    .menuButton {
+                        background: none;
+                        border: none;
+                        color: #333;
+                        font-size: 18px;
+                        text-align: left;
+                        width: 100%;
+                        padding: 10px;
+                        cursor: pointer;
+                        position: relative;
+                    }  
+                    .arrow {
+                        border: solid #333;
+                        border-width: 0 2px 2px 0;
+                        display: inline-block;
+                        padding: 3px;
+                        position: absolute;
+                        right: 10px;
+                        top: 15px;
+                        transform: rotate(45deg);
+                        transition: transform 0.3s ease;
+                    }   
+                    .arrowDown {
+                        transform: rotate(-135deg);
+                    }
+                    .subMenu {
+                        list-style: none;
+                        padding: 1rem 0;
+                        margin: 0;
+                        padding-left: 2rem;
+                        background-color: #e4e4e4;
+                        border-radius: 10px;
+                        a {
+                            color: #333;
+                            text-decoration: none;
+                            font-size: 18px;
+                            display: block;
+                            padding: 5px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .hd {
+        .hddiv {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+        }
+    }
+}
+   

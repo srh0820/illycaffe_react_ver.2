@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import { Link } from 'react-router-dom';
 
@@ -6,13 +6,17 @@ import './scss/hd.scss';
 import hdscss from './scss/hd.module.scss';
 import gnbMenu from '../json/hdgnb.json'; 
 
-import SearchIcon from './svg/SearchIcon'
-import LoginIcon from './svg/LoginIcon'
-import logo from '../img/Logo.svg'
+import SearchIcon from './svg/SearchIcon';
+import LoginIcon from './svg/LoginIcon';
+import logo from '../img/Logo.svg';
+import { ReactComponent as HamburgerIcon } from '../img/listIcon.svg';
+import { ReactComponent as CloseIcon } from '../img/closeIcon.svg';
 
 function Hd() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isSearchVisible, setIsSearchVisible] = useState(false);
     const [placeholderIndex, setPlaceholderIndex] = useState(0);
+    const [activeIndex, setActiveIndex] = useState(null); 
     const headerHeight = 96;
 
     const placeholders = [
@@ -27,33 +31,23 @@ function Hd() {
         setPlaceholderIndex((prevIndex) => (prevIndex + 1) % placeholders.length);
     };
 
-    useEffect(() => {
-        const header = document.querySelector('#hd');
-        
-        const handleScroll = () => {
-            if (window.scrollY > 0) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
 
     const toggleSearch = () => {
         setIsSearchVisible(prevState => !prevState);
     };
 
+    const handleAccordionClick = (index) => {
+        setActiveIndex(index === activeIndex ? null : index);
+    };
+
     return (
         <header id="hd" className={hdscss.hd}>
-            <div className="container-1824 d-flex justify-content-between align-items-center py-3">
+            <div className={`${hdscss.hddiv} d-flex justify-content-between align-items-center py-3`}>
                 <h1 className="mx-0 mb-0">
-                    <a href="/"><img src={logo} alt="로고"/></a>
+                    <a href="/"><img src={logo} alt="로고" /></a>
                 </h1>
                 <ul className={`${hdscss.gnb} ps-0 mb-0 d-flex justify-content-center align-items-center`}>
                     {gnbMenu.map((menu, index) => (
@@ -98,6 +92,39 @@ function Hd() {
                         </i>
                         <span className="visually-hidden">로그인</span>
                     </li>
+                    <li className={`${hdscss.list} ms-4`}>
+                        <button onClick={toggleMenu} className='px-0'>
+                            <HamburgerIcon width="26" height="25" />
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <div className={`${hdscss.slideMenu} ${isMenuOpen ? hdscss.open : ''}`}>
+                <div className={hdscss.menuHeader}>
+                    <button onClick={toggleMenu} className={hdscss.closeButton}>
+                        <CloseIcon width="26" height="25" />
+                    </button>
+                </div>
+                <ul className={`${hdscss.slideGnb} ps-0 mb-0`}>
+                    {gnbMenu.map((menu, index) => (
+                        <li key={index} className={`${hdscss.gnb_d1_li}`}>
+                            <button 
+                                className={hdscss.menuButton} 
+                                onClick={() => handleAccordionClick(index)}
+                            >
+                                {menu.title}
+                                <span className={`${hdscss.arrow} ${activeIndex === index ? hdscss.arrowDown : ''}`}></span>
+                            </button>
+                            {activeIndex === index && (
+                                <ul className={hdscss.subMenu}>
+                                    {menu.submenu.map((submenu, subIndex) => (
+                                        <li key={subIndex}><Link to={submenu.link}>{submenu.title}</Link></li>
+                                    ))}
+                                </ul>
+                            )}
+                        </li>
+                    ))}
                 </ul>
             </div>
         </header>
