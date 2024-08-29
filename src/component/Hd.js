@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import { Link } from 'react-router-dom';
 
@@ -42,6 +42,24 @@ function Hd() {
     const handleAccordionClick = (index) => {
         setActiveIndex(index === activeIndex ? null : index);
     };
+
+    useEffect(() => {
+        const header = document.querySelector('#hd');
+
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return (
         <header id="hd" className={hdscss.hd}>
