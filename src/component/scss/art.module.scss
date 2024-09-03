@@ -86,17 +86,30 @@
     }
 }
 
-@media (max-width: 626px) {
+@media (max-width: 630px) {
     .art {
         .box {
             .textArea {
-                top: 230px;
+                padding-left: 30px;
+                h2 {
+                    text-align: left;
+                    font-size: 29px;
+                    letter-spacing: 0.5rem;
+                }
+                .p1 {
+                    text-align: left;
+                    font-size: 15px;
+                }
+                .p2 {
+                    text-align: left;
+                    font-size: 15px;
+                }
             }
         }
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .art {
         .box {
             .videoArea {
@@ -106,13 +119,6 @@
                 }
             }
             .textArea {
-                h2 {
-                    font-size: 28px;
-                    letter-spacing: 14px;
-                }
-                .p1 {
-                    font-size: 16px;
-                }
                 .p2 {
                     .default_text {
                         display: none;
@@ -121,7 +127,7 @@
                         display: inline;
                         color: #FFF;
                         font-family: "Noto Sans KR";
-                        font-size: 16px;
+                        font-size: 15px;
                         font-weight: 300;
                         line-height: 140%;
                         letter-spacing: -0.8px;
@@ -132,20 +138,26 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 460px) {
     .art {
         .box {
-            height: 380px;
-            .videoArea {
-                height: 100%;
-            }
             .textArea {
-                top: 80px;
+                padding-left: 26px;
+            }
+        }
+    }
+}
+
+@media (max-width: 433px) {
+    .art {
+        .box {
+            .textArea {
+              height: 500px;
+              padding-top: 300px;
                 h2 {
                     font-size: 24px;
                 }
             }
         }
     }
-    
 }
