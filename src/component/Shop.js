@@ -21,7 +21,7 @@ function Shop() {
                             정보, 경험, 맛과 과학 및 예술의 세계를 구축했습니다.<br />
                         </span>
                     </p>
-                    <Button as={Link} to="/" className={`${shopscss.btn} mb-5`}>
+                    <Button as={Link} to="/Subpage" className={`${shopscss.btn} mb-5`}>
                         자세히보기
                     </Button>
                 </div>

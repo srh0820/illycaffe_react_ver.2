@@ -18,7 +18,7 @@ function Main() {
                         <p className={`${mainscss.mainText2} ms-2`}>
                             일리커피는 아라비카 원두만을 사용하여 독보적인 블렌딩으로 탄생했습니다
                         </p>
-                        <Button as={Link} to="/" className={`${mainscss.btn} ms-2`}>
+                        <Button as={Link} to="/Subpage" className={`${mainscss.btn} ms-2`}>
                             자세히보기
                         </Button>
                     </div>

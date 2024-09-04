@@ -70,7 +70,7 @@ function Hd() {
                 <ul className={`${hdscss.gnb} ps-0 mb-0 d-flex justify-content-center align-items-center`}>
                     {gnbMenu.map((menu, index) => (
                         <li key={index} className={`${hdscss.gnb_d1_li} mx-4 position-relative`}>
-                            <Link to="/" className={hdscss.gnb_d1_a}>{menu.title}</Link>
+                            <Link to="Subpage" className={hdscss.gnb_d1_a}>{menu.title}</Link>
                             <ul className={`${hdscss.d2_ul} position-absolute`}>
                                 {menu.submenu.map((submenu, subIndex) => (
                                     <li key={subIndex}><Link to={submenu.link}>{submenu.title}</Link></li>

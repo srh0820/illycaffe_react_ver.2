@@ -2,47 +2,47 @@
     {
       "title": "BRAND",
       "submenu": [
-        { "title": "BRAND", "link": "/" },
-        { "title": "일리커피", "link": "/" },
-        { "title": "뉴스 & 공지", "link": "/" }
+        { "title": "BRAND", "link": "/Subpage" },
+        { "title": "일리커피", "link": "/Subpage" },
+        { "title": "뉴스 & 공지", "link": "/Subpage" }
       ]
     },
     {
       "title": "ILLY CAFFE",
       "submenu": [
-        { "title": "ILLY CAFFE", "link": "/" },
-        { "title": "프랜차이즈", "link": "/" },
-        { "title": "매장찾기", "link": "/" }
+        { "title": "ILLY CAFFE", "link": "/Subpage" },
+        { "title": "프랜차이즈", "link": "/Subpage" },
+        { "title": "매장찾기", "link": "/Subpage" }
       ]
     },
     {
       "title": "ILLY SHOP",
       "submenu": [
-        { "title": "ILLY SHOP", "link": "/" },
-        { "title": "매장찾기", "link": "/" }
+        { "title": "ILLY SHOP", "link": "/Subpage" },
+        { "title": "매장찾기", "link": "/Subpage" }
       ]
     },
     {
       "title": "UDC",
       "submenu": [
-        { "title": "UDC & 교육철학", "link": "/" },
-        { "title": "교육내용", "link": "/" }
+        { "title": "UDC & 교육철학", "link": "/Subpage" },
+        { "title": "교육내용", "link": "/Subpage" }
       ]
     },
     {
       "title": "BTB",
       "submenu": [
-        { "title": "BTB 사업", "link": "/" },
-        { "title": "공식대리점", "link": "/" }
+        { "title": "BTB 사업", "link": "/Subpage" },
+        { "title": "공식대리점", "link": "/Subpage" }
       ]
     },
     {
       "title": "e-SHOP",
       "submenu": [
-        { "title": "커피제품", "link": "/" },
-        { "title": "캡슐머신", "link": "/" },
-        { "title": "일리아트컬랙션", "link": "/" },
-        { "title": "커피악세서리", "link": "/" }
+        { "title": "커피제품", "link": "/Subpage" },
+        { "title": "캡슐머신", "link": "/Subpage" },
+        { "title": "일리아트컬랙션", "link": "/Subpage" },
+        { "title": "커피악세서리", "link": "/Subpage" }
       ]
     }
   ]

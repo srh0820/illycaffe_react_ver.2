@@ -13,10 +13,12 @@ import Illy from './illy';
 import Ft from './component/Ft'
 import Quick from './component/Quick';
 import Subpage from './component/subpage/Subpage'
+import ScrollToTop from './component/ScollToTop';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <BrowserRouter>    
+    <BrowserRouter>
+        <ScrollToTop />    
         <Hd />
         <Routes>
             <Route 

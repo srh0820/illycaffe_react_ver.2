@@ -17,12 +17,12 @@ function Ft() {
                     </Link>
                 </h1>
                 <ul className={`${ftscss.gnb} d-flex ms-0 mb-0 ps-0 pt-3 pb-5 border-bottom`}>
-                    <li className="me-4"><Link to="/">BRAND</Link></li>
-                    <li className="me-4"><Link to="/">ILLY CAFFE</Link></li>
-                    <li className="me-4"><Link to="/">ILLY SHOP</Link></li>
-                    <li className="me-4"><Link to="/">UDC</Link></li>
-                    <li className="me-4"><Link to="/">BTB</Link></li> 
-                    <li className="me-4"><Link to="/">e-SHOP</Link></li>
+                    <li className="me-4"><Link to="Subpage">BRAND</Link></li>
+                    <li className="me-4"><Link to="Subpage">ILLY CAFFE</Link></li>
+                    <li className="me-4"><Link to="Subpage">ILLY SHOP</Link></li>
+                    <li className="me-4"><Link to="Subpage">UDC</Link></li>
+                    <li className="me-4"><Link to="Subpage">BTB</Link></li> 
+                    <li className="me-4"><Link to="Subpage">e-SHOP</Link></li>
                 </ul>
                 <div className={`${ftscss.ftText} py-5 mb-0`}>
                     <p className="mb-0">
