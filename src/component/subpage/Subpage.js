@@ -1,10 +1,10 @@
-import React from 'react'
-
-import sub from '../scss/Sub.module.scss'
+import SubShop from "./SubShop"
 
 function Subpage() {
     return (
-        <h2 className={sub.prepare}>페이지 준비중입니다.</h2>
+        <>
+            <SubShop></SubShop>
+        </>
     )
 }
 
