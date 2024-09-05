@@ -2,33 +2,83 @@
     padding: 200px 0;
     .prddiv {
         .prdimg {
-            padding-left: 74px;
             background-color: #D9261C;
             border-radius: 10px;
             padding: 7.131rem 11.875rem;
-            margin-left: 74px;
             img {
                 width: 200px;
             }
         }
         .prdtext {
-            padding-left: 80px;
+            margin-left: 80px;
             width: 580px;
             p {
                 font-family: "Noto Sans KR";
                 margin-bottom: 0;
             }
+            .absp {
+                position: absolute; 
+                top: -24px; 
+                margin: 0;
+                color: #6C6C6C;
+                font-size: 13px;
+                font-weight: 400;
+            }
+            .redline {
+                border: 2px solid #D9261C;
+                margin-bottom: 22px;
+            }
+            svg {
+                path {
+                    fill: #666;
+                }
+                &:hover {
+                    path {
+                        fill: #D9261C;
+                    }
+                }
+            }
             h3 {
                 font-family: "Noto Sans KR";
                 font-size: 22px;
-                font-weight: 500;
+                font-weight: 600;
             }
             .pdiv1 {
                 width: 100%;
                 .p1 {
+                    color: #333;
                     font-size: 15px;
+                    font-weight: 600;
                 }
-            }       
+                .p2{
+                    color: #333;
+                    font-size: 20px;
+                    font-weight: 600;
+                    padding-top: 1rem;
+                }
+            }
+            .thinline {
+                border: 1px solid #EEE9E9;;
+                margin-top: 22px;
+            }
+            .pdiv2 {
+                margin-top: 24px;
+            }
+            .pdiv2, .pdiv3, .pdiv4{
+                width: 100%;
+                padding-bottom: 40px;
+                .p3{
+                    width: 25%;
+                    color: #666;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+                .p4 {
+                    color: #666;
+                    font-size: 13px;
+                    font-weight: 400;
+                }
+            }
         }
     }
 }
