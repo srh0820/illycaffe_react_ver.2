@@ -1,25 +1,22 @@
 import React from 'react';
 
-import subshopscss from './shop.module.scss';
-import products from '../../json/productdata.json';
+import subshopscss from './scss/subShop.module.scss';
+import NumberInput from './SubShop/NumberInput';
 
 import { ReactComponent as HeartIcon } from '../../img/heartIcon.svg';
 
 function SubShop() {
-    const firstProduct = products[0]; // 첫 번째 제품만
-
     return (
         <section className={subshopscss.subshop}>
             <div className={`${subshopscss.prddiv} container-1240 d-flex`}>
-                {firstProduct && ( // 첫 번째 제품이 존재하는지 확인
-                    <div className={subshopscss.prdimg}>
-                        <img src={firstProduct.image} alt={firstProduct.alt} />
-                    </div>
-                )}
+                <div className={subshopscss.prdimg}>
+                    <img src="/img/subcolombia.png" alt='250g 아라비카 셀렉션 원두커피 브라질' />
+                </div>
                 <div className={`${subshopscss.prdtext} position-relative`}>
                     <p className={subshopscss.absp}>
                         e-SHOP  &gt; 커피제품 &gt; 원두커피 
                     </p>
+
                     <div className={subshopscss.redline}></div>
                     <div className='d-flex align-items-center justify-content-between mb-4'>
                         <h3 className='mb-0'>
@@ -60,7 +57,14 @@ function SubShop() {
                             오를 수 있습니다. 은박 실링이 개봉되지 않았다면 정상 제품입니다.
                         </p>
                     </div>
+   
+                    <NumberInput></NumberInput>
 
+                    <div className={`${subshopscss.pdiv5} d-flex justify-content-between`}>
+                        <p className={subshopscss.p5}> 장바구니 </p>
+                        <p className={subshopscss.p6}> 바로 구매 </p>
+                    </div>
+                 
                 </div>
             </div>
         </section>

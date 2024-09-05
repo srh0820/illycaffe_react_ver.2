@@ -4,10 +4,7 @@
         .prdimg {
             background-color: #D9261C;
             border-radius: 10px;
-            padding: 7.131rem 11.875rem;
-            img {
-                width: 200px;
-            }
+            padding: 6.844rem 9.688vw;
         }
         .prdtext {
             margin-left: 80px;
@@ -79,6 +76,80 @@
                     font-weight: 400;
                 }
             }
+            .pdiv5 {
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                .p5 {
+                    color: #333;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    border: 1px solid #C8C8C8;
+                    width: 49%;
+                    padding: 1rem 0;
+                    text-align: center;
+                    cursor: pointer;
+                    transition: 0.3s;
+                }
+                .p6 {
+                    color: #fff;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    background-color: #D9261C;
+                    width: 49%;
+                    padding: 1rem 0;
+                    text-align: center;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    
+                }
+                .p5, .p6 {
+                    &:hover {
+                        color: #D9261C;
+                        background-color: #fff;
+                        border: 1px solid #D9261C;
+                    }
+                }
+            }
         }
+    }
+}
+
+.numberInput {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    .numberInput__button {
+        background-color: transparent;
+        border: 1px solid #C8C8C8;
+        cursor: pointer;
+        font-size: 1rem;
+        color: #333;
+        &:hover {
+            background-color: #e0e0e0;
+        }
+    }
+    .numberInput__value {
+        border-top: 1px solid #C8C8C8;
+        border-bottom: 1px solid #C8C8C8;
+        color: #333;
+        font-family: "Noto Sans KR";
+        font-size: 1rem;
+        font-weight: 300;
+        text-align: center;
+        padding: 1px 0;
+        width: 30px;
+    }
+    p {
+        color: #333;
+        font-family: "Noto Sans KR";
+        font-size: 1rem;
+        font-weight: 600;
+    }   
+    .numberInput__total {
+        color: #333;
+        font-family: "Noto Sans KR";
+        font-size: 22px;
+        font-weight: 600;
     }
 }
