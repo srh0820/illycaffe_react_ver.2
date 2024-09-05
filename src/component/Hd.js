@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import './scss/hd.scss';
 import hdscss from './scss/hd.module.scss';
@@ -18,6 +18,9 @@ function Hd() {
     const [placeholderIndex, setPlaceholderIndex] = useState(0);
     const [activeIndex, setActiveIndex] = useState(null); 
     const headerHeight = 96;
+
+    const location = useLocation(); // 현재 위치를 가져옴
+    const isSubpage = location.pathname !== "/"; // 서브페이지 여부 확인
 
     const placeholders = [
         '정기구독 신청',
@@ -62,7 +65,7 @@ function Hd() {
     }, []);
 
     return (
-        <header id="hd" className={hdscss.hd}>
+        <header id="hd" className={`${hdscss.hd} ${isSubpage ? hdscss.hdSubpage : hdscss.hd}`}>
             <div className={`${hdscss.hddiv} d-flex justify-content-between align-items-center py-3`}>
                 <h1 className="mx-0 mb-0">
                     <a href="/"><img src={logo} alt="로고" /></a>
@@ -82,7 +85,7 @@ function Hd() {
                 <ul className={`${hdscss.iconMenu} ps-0 mb-0 d-flex justify-content-end align-items-center`}>
                     <li>
                         <ScrollLink 
-                            to="contact_section" duration={300} offset={-headerHeight}className="text-nowrap mb-0">
+                            to="contact_section" duration={300} offset={-headerHeight} className="text-nowrap mb-0">
                             브랜드 제휴
                         </ScrollLink>
                     </li>

@@ -154,6 +154,25 @@
     }
 }
 
+.hdSubpage {
+    a {
+        color: #333 !important;
+        &:hover {
+            color: #D9261C !important;
+        }
+    }
+    svg {
+        path {
+            fill: #333;
+        }
+        &:hover {
+            path {
+                fill: #D9261C;
+            }
+        }
+    }
+}
+
 @media (max-width: 1200px) {
     .hd {
         .iconMenu {
