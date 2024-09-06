@@ -16,22 +16,34 @@
             align-items: center; 
             text-align: center;
             padding: 38px 0; 
-            margin-right: 10px;
             background-color: #F3EFE9;
             border-radius: 10px;
-            &:nth-child(5) {
-                margin-right: 0;
+            border: 1px solid transparent;
+            width: calc(20% - 10px);
+            img {
+                width: 95%;
+                padding: 0 3.65vw; 
+                margin-bottom: 1.5rem;
+                height: auto;
+                object-fit: contain;
+                transition: transform 0.3s ease;
             }
-        }
-        img {
-            padding: 0 3.65vw; 
-            margin-bottom: 2.5rem;
-        }
-        p {
-            color: #333;
-            font-family: "Noto Sans KR";
-            font-size: 13px;
-            font-weight: 400;
+            p {
+                color: #333;
+                font-family: "Noto Sans KR";
+                font-size: 13px;
+                font-weight: 400;
+            }
+            &:hover {
+                border: 1px solid #D9261C;
+                img {
+                    transform: translateY(-10px); 
+                }
+                p {
+                    color: #D9261C;
+                    font-weight: 500;
+                }
+            }
         }
     }
 }

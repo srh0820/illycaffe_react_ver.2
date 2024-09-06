@@ -10,13 +10,13 @@ function SubPrd() {
                 <p className={subprdscss.p}> 관련 상품 </p>
                 <ul className={subprdscss.prdlist}>
                     {subprddata.map((coffee, index) => (
-                    <li key={index} className={subprdscss.coffee_item}>
-                        <img src={coffee.image} alt={coffee.alt} />
-                        <p className='mb-0'>{coffee.title}</p>
-                        <p className='mb-0'>[{coffee.origin}]</p>
-                    </li>
-                ))}
-          </ul>
+                        <li key={index} className={subprdscss.coffee_item}>
+                            <img src={coffee.image} alt={coffee.alt} />
+                            <p className='mb-0'>{coffee.title}</p>
+                            <p className='mb-0'>[{coffee.origin}]</p>
+                        </li>
+                    ))}
+                </ul>
             </div>
         </section>
     )
