@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const LineThinGray = styled.line`
+const LineThinGray = styled.div`
     display: block;
     border: 1px solid #C8C8C8;
 `
