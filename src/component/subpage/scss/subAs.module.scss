@@ -1,0 +1,33 @@
+.subas {
+    margin-bottom: 100px;
+    .title {
+        color: #D9261C;
+        font-family: "Noto Sans KR";
+        font-size: 16px;
+        font-weight: 600;
+    }
+    ul {
+        margin-top: 1rem;
+        margin-bottom: 0;
+        padding: 0;
+        li {
+            position: relative;
+            color: #666;
+            font-family: "Noto Sans KR";
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 26px;
+            padding-left: 12px;
+            &:before {
+                position: absolute;
+                top: 11px;
+                left: 0px;
+                width: 3px;
+                height: 3px;
+                border-radius: 100%;
+                background-color: rgb(48, 48, 51);
+                content: "";
+            }
+        }
+    }
+}
