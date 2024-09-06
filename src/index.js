@@ -21,11 +21,10 @@ root.render(
         <ScrollToTop />    
         <Hd />
         <Routes>
-            <Route 
-              path="/" 
-              element={<> <Illy /><Quick /> </>} />
+            <Route path="/" element={<Illy />} />
             <Route path="*" element={<Subpage />} />
         </Routes>
         <Ft />
+        <Quick />
     </BrowserRouter>
 );
