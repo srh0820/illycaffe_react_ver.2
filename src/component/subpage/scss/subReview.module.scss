@@ -1,0 +1,35 @@
+.SubReview {
+    margin-bottom: 100px;
+    .title {
+        margin-bottom: 1rem;
+        color: #D9261C;
+        font-family: "Noto Sans KR";
+        font-size: 16px;
+        font-weight: 600;
+    }
+    ul {
+        padding: 0;
+        margin-bottom: 1rem;
+        li {
+            color: #D9261C;
+            font-family: "Noto Sans KR";
+            font-size: 16px;
+            font-weight: 600;
+        } 
+    }
+    .ul2 {
+        margin-top: 1rem;
+        li {
+            color: #333;
+        }
+    }
+    p {
+        text-align: center;
+        color: #333;
+        font-family: "Noto Sans KR";
+        font-size: 15px;
+        font-weight: 400;
+        margin-bottom: 2.5rem;
+        line-height: normal;
+    }
+}
