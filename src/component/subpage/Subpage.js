@@ -3,6 +3,7 @@ import SubPrd from "./SubPrd"
 import SubTable from './SubTable'
 import SubAs from './SubAs'
 import SubReview from "./SubReview"
+import SubQna from "./SubQna"
 
 function Subpage() {
     return (
@@ -12,6 +13,7 @@ function Subpage() {
             <SubTable></SubTable>
             <SubAs></SubAs>
             <SubReview></SubReview>
+            <SubQna></SubQna>
         </>
     )
 }
