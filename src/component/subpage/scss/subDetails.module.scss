@@ -1,0 +1,150 @@
+.subdetails{
+    margin-bottom: 100px;
+    .spadiv {
+        border: 20px solid rgba(217, 38, 28, 0.26);
+        background: #FFF;
+        padding: 3rem 5rem;
+        img{
+            padding-right: 5rem;
+        }
+        .pdiv {
+            flex-direction: column;
+            justify-content: space-between;
+            .textred {
+                color: #D9261C;
+            }
+            .textblack {
+                color: #000;
+            }
+            p {
+                font-family: "Noto Sans KR";
+                font-size: 20px;
+                font-weight: 500;
+                line-height: normal;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .exdiv {
+        margin-top: 50px;
+        text-align: center;
+        img {
+            width: 12%;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+        h3 {
+            color: #333;
+            font-family: "Noto Sans KR";
+            font-size: 36px;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom: 50px;
+            letter-spacing: -0.8px;
+        }
+        .p1 {
+            color: #333;
+            font-family: "Noto Sans KR";
+            font-size: 26px;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 100px;
+            letter-spacing: -0.8px;
+            span {
+                color: #D9261C;
+            }
+        }
+        .p2 {
+            color: #D9261C;
+            font-family: "Noto Sans KR";
+            font-size: 40px;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom: 50px;
+            letter-spacing: -0.8px;
+        }
+        .p3 {
+            color: #333;
+            font-family: "Noto Sans KR";
+            font-size: 20px;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 50px;
+            letter-spacing: -0.8px;
+        }
+    }
+    .coffeelist {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 auto;
+        .coffeeitem {
+            display: flex;
+            width: 46%;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            padding: 2rem;
+            .coffeeimg {
+                width: 100px;
+                height: auto;
+                margin-right: 30px;
+            }
+            .coffeeinfo {
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                h3 {
+                    margin-bottom: 0.5rem;
+                    font-size: 18px;
+                    font-family: "Noto Sans KR";
+                    font-weight: 600;
+                    line-height: normal;
+                }
+                p {
+                    margin: 0;
+                    color: #333;
+                    font-family: "Noto Sans KR";
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: -0.8px;
+                }
+                
+            }
+        }
+
+        .coffeeitem:nth-child(2),
+        .coffeeitem:nth-child(4),
+        .coffeeitem:nth-child(6){
+            flex-direction: row-reverse;
+            text-align: right;
+            img {
+                margin-right: 0;
+                margin-left: 30px;
+            }
+        }
+
+        .coffeeitem:nth-child(1) .coffeeinfo h3 {
+            color: #BA752A;
+        }
+        .coffeeitem:nth-child(2) .coffeeinfo h3 {
+            color: #9E7C5D;
+        }
+        .coffeeitem:nth-child(3) .coffeeinfo h3 {
+            color: #BC4C30;
+        }
+        .coffeeitem:nth-child(4) .coffeeinfo h3 {
+            color: #8A492C;
+        }
+        .coffeeitem:nth-child(5) .coffeeinfo h3 {
+            color: #6D2D3D;
+        }
+        .coffeeitem:nth-child(6) .coffeeinfo h3 {
+            color: #A37118;
+        }
+  
+    } 
+}
