@@ -12,7 +12,7 @@ function SubReview() {
                     <p className={subreviewscss.title}> 후기 </p>
                     <ul className='d-flex justify-content-between'>
                         <li> 포토리뷰 </li>
-                        <li className='ms-3'> 전체리뷰리뷰 </li>
+                        <li className='ms-3'> 전체리뷰 </li>
                         <li className='ms-3'> 제품별리뷰 </li>
                     </ul>
                 </div>

@@ -7,15 +7,70 @@
         font-size: 16px;
         font-weight: 600;
     }
-    p {
-        color: #333;
-        font-family: "Noto Sans KR";
-        font-size: 15px;
-        font-weight: 400;
-        line-height: normal;
+    .btndiv {
         margin-bottom: 1rem;
+        p {
+            color: #333;
+            font-family: "Noto Sans KR";
+            font-size: 15px;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 0;
+        }
+        button {
+            border: none;
+            padding: 0 2rem;
+            color: #333;
+            background-color: #F3EFE9;
+            font-family: "Noto Sans KR";
+            font-size: 15px;
+            font-weight: 600;
+            line-height: normal;
+            transition: 0.3s;
+            &:hover {
+                color: #D9261C;
+            }
+        }
     }
-    button {
-        display: inline;
-    }
+    .table {
+        width: 100%;
+        border-collapse: collapse; 
+        .textth {
+            padding: 1rem;
+            border-bottom: 1px solid #c8c8c8;
+        }
+        tbody {
+            position: relative;
+            &:before {
+                content: "";
+                display: block;
+                height: 1.5rem;
+            }
+            &:after {
+                content: "";
+                display: block;
+                height: 1.5rem; 
+            }
+        }
+        th, td {
+            padding: 0.5rem;
+            text-align: center;
+            font-size: 15px;
+            color: #333;
+            font-family: "Noto Sans KR";
+            line-height: normal;
+        }
+        th {
+            font-weight: 400;
+        }
+        td {
+            font-weight: 300;
+            &:nth-child(2) {
+                text-align: left;
+            }
+            &.textred {
+                color: #D9261C !important;
+            }
+        }
+    }    
 }
