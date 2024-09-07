@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "image": "img/etiopia.png",
+        "title": "에티오피아",
+        "description": "쟈스민, 오렌지 꽃, 카모마일의|플로럴 아로마. 기분 좋은 산미와|단맛이 균형 잡힌 맛",
+        "alt": "아라비카 컬렉션 에티오피아"
+    },
+    {
+        "id": "2",
+        "image": "img/costarica.png",
+        "title": "코스타리카",
+        "description": "꿀, 카라멜, 그리고 바닐리가 느껴지는|달콤한 커피의 맛. 말린 과일과|초콜릿 향이 느껴지는 아로마",
+        "alt": "아라비카 컬렉션 코스타리카"
+    }, 
+    {
+        "id": "3",
+        "image": "img/colombia.png",
+        "title": "콜롬비아",
+        "description": "감귤류, 레드베리 과일 아로마|기분 좋은 산미와 단맛",
+        "alt": "아라비카 컬렉션 콜롬비아"
+    }, 
+    {
+        "id": "4",
+        "image": "img/brasile.png",
+        "title": "브라질",
+        "description": "카라멜과 건 과일의 아로마|신맛과 쓴맛의 균형|부드러운 목넘김",
+        "alt": "아라비카 컬렉션 브라질"
+    }, 
+    {
+        "id": "5",
+        "image": "img/gutemala.png",
+        "title": "과테말라",
+        "description": "초콜릿 아로마와 뚜렷한 쓴맛|강렬한 아로마와 바디감",
+        "alt": "아라비카 컬렉션 과테말라"
+    }, 
+    {
+        "id": "6",
+        "image": "img/subNica.png",
+        "title": "니카라과",
+        "description": "견과류, 건과일 구운 빵과|다크 초콜릿의 뚜렷한 아로마|벨벳같이 부드럽게 감싸는 향미",
+        "alt": "아라비카 컬렉션 니카라과"
+    }
+]
