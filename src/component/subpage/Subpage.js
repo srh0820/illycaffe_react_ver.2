@@ -1,5 +1,6 @@
 import SubShop from "./SubShop"
 import SubPrd from "./SubPrd"
+import SubTab from "./SubTab"
 import SubTable from './SubTable'
 import SubAs from './SubAs'
 import SubReview from "./SubReview"
@@ -10,6 +11,7 @@ function Subpage() {
         <>
             <SubShop></SubShop>
             <SubPrd></SubPrd>
+            <SubTab></SubTab>
             <SubTable></SubTable>
             <SubAs></SubAs>
             <SubReview></SubReview>
