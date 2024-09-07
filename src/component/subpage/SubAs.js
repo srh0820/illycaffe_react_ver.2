@@ -5,7 +5,7 @@ import Linegray from '../styled/LineGray'
 
 function SubAs() {
     return (
-        <section className={subas.subas}>
+        <section id='SubAs' className={subas.subas}>
             <div className='container-1240'>
                 <p className={subas.title}> 교환 및 반품 안내 </p>
                 <Linegray></Linegray>

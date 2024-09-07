@@ -6,7 +6,7 @@ import Linethingray from '../styled/LineThinGray'
 
 function SubQna() {
     return (
-        <section className={subqnascss.SubQna}>
+        <section id='SubQna' className={subqnascss.SubQna}>
             <div className='container-1240'>
                 <p className={subqnascss.title}> 상품문의 </p>
                 <div className={`${subqnascss.btndiv} d-flex justify-content-between`}>

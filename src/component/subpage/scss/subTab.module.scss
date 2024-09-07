@@ -1,0 +1,18 @@
+.subtab {
+    margin-bottom: 100px;
+    button {
+        width: calc(25%);
+        height: 3.5rem;
+        border: 1px solid #c8c8c8;
+        background-color: transparent;
+        color: #333;
+        font-family: "Noto Sans KR";
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal;
+        padding: 0;
+        &:nth-child(-n+3) {
+            border-right: 0;
+        }
+    }
+}

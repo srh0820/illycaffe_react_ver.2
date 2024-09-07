@@ -6,7 +6,7 @@ import Linethingray from '../styled/LineThinGray'
 
 function SubReview() {
     return (
-        <section className={subreviewscss.SubReview}>
+        <section id='SubReview' className={subreviewscss.SubReview}>
             <div className='container-1240'>
                 <div className='d-flex justify-content-between'>
                     <p className={subreviewscss.title}> 후기 </p>
