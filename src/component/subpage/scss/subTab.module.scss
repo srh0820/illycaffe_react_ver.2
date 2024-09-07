@@ -11,8 +11,12 @@
         font-weight: 600;
         line-height: normal;
         padding: 0;
+        transition: 0.3s;
         &:nth-child(-n+3) {
             border-right: 0;
+        }
+        &:hover {
+            color: #D9261C;
         }
     }
 }
