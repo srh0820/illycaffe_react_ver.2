@@ -56,12 +56,24 @@ function SubDetails() {
                         일리만의 특별한 질소압축 포장방식(Pressurization) 으로 <br />
                         어디서나 동일하고 신선한 커피의 맛과 향을 느낄 수 있는 세계적인 커피입니다. 
                     </p>
+                    <p className={subdetailsscss.p1short}>
+                        일리는 혁신과 전문성으로 탄생한 100% <br /> 
+                        아라비카 원두 블렌딩 커피입니다. <br />
+                        질소압축 포장으로 어디서나 신선한 맛과 향을 <br /> 
+                        느낄 수 있는 세계적인 브랜드입니다.
+                    </p>
                     <p className={subdetailsscss.p2}> Arabica Selection </p>
                     <p className={subdetailsscss.p3}>
                         원두 상태의 제품으로 그라인더로 분쇄하여 사용하실 수 있습니다. <br />
                         개폐하기 용이한 디자인으로 밀폐 후 외부 산소를 완벽히 차단하여 <br />
                         커피의 신선도와 향을 유지시켜 줍니다. 개인 취향에 맞게 분쇄도를 설정하여 <br />
                         추출할 수 있으며, 분쇄커피보다 산화도가 더딥니다.
+                    </p>
+                    <p className={subdetailsscss.p3short}>
+                        원두 상태로 그라인더를 사용하여 분쇄할 수 있으며, <br />
+                        산소 차단 밀폐로 신선도와 향을 유지합니다. <br />
+                        개인 취향에 맞게 분쇄도를 설정해 추출할 수 있으며, <br /> 
+                        분쇄커피보다 산화가 더딥니다.
                     </p>
                 </div>
                 <div className={subdetailsscss.coffeelist}>

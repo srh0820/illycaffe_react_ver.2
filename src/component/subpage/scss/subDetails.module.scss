@@ -55,7 +55,7 @@
             margin-bottom: 50px;
             letter-spacing: -0.8px;
         }
-        .p1 {
+        .p1, .p1short {
             color: #333;
             font-family: "Noto Sans KR";
             font-size: 26px;
@@ -76,7 +76,7 @@
             margin-bottom: 50px;
             letter-spacing: -0.8px;
         }
-        .p3 {
+        .p3, .p3short {
             color: #333;
             font-family: "Noto Sans KR";
             font-size: 20px;
@@ -84,6 +84,9 @@
             line-height: normal;
             margin-bottom: 50px;
             letter-spacing: -0.8px;
+        }
+        .p1short, .p3short {
+            display: none;
         }
     }
     .coffeelist {
@@ -97,7 +100,6 @@
             display: flex;
             width: 46%;
             margin-bottom: 30px;
-            border-radius: 10px;
             padding: 2rem;
             .coffeeimg {
                 width: 100px;
@@ -124,7 +126,6 @@
                     line-height: normal;
                     letter-spacing: -0.8px;
                 }
-                
             }
         }
 
@@ -161,6 +162,41 @@
     } 
 }
 
+@media (max-width: 1244px) {
+    .subdetails{
+        .exdiv {
+            h3 {
+                font-size: 30px;
+            }
+            .p1 {
+                font-size: 20px;
+                margin-bottom: 50px;
+            }
+            .p2 {
+                font-size: 30px;
+            }
+            .p3 {
+                font-size: 20px;
+            }
+        }
+        .coffeelist {
+            width: 90%;
+            .coffeeitem {
+                width: 45%;
+                padding: 1rem;
+                .coffeeinfo {
+                    h3 {
+                        font-size: 1rem;
+                    }
+                    p {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        } 
+    }
+}
+
 @media (max-width: 1240px) {
     .subdetails {
         .subdtdiv {
@@ -192,6 +228,21 @@
                     }
                 }
             }
+            .coffeelist {
+                flex-direction: column;
+                .coffeeitem {
+                    width: 80%;
+                    padding: 0;
+                    .coffeeinfo {
+                        h3 {
+                            font-size: 1rem;
+                        }
+                        p {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -210,6 +261,29 @@
                     margin-bottom: 1rem;
                     width: 200px
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 693px) {
+    .subdetails{
+        .exdiv {
+            img {
+                width: 70px;
+            }
+            h3 {
+                font-size: 22px;
+            }
+            .p1 {
+                font-size: 1rem;
+                margin-bottom: 50px;
+            }
+            .p2 {
+                font-size: 22px;
+            }
+            .p3 {
+                font-size: 1rem;
             }
         }
     }
@@ -239,6 +313,78 @@
                     }
                 }
             }
+            .coffeelist {
+                .coffeeitem {
+                    img {
+                        width: 80px;
+                    }
+                }
+            } 
+
+            .coffeeitem:nth-child(2),
+            .coffeeitem:nth-child(4),
+            .coffeeitem:nth-child(6){
+                flex-direction: row;
+                text-align: left;
+                img {
+                    margin-right: 30px;
+                    margin-left: 0;
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width: 558px) {
+    .subdetails{
+        .exdiv {
+            .p1 {
+                display: none;
+            }
+            .p3 {
+                display: none;
+            }
+            .p1short, .p3short {
+                display: block;
+                color: #333;
+                font-family: "Noto Sans KR";
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: -0.8px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: 512px) {
+    .subdetails {
+        .subdtdiv {
+            .coffeelist {
+                width: 100%;
+            } 
+        }
+    }
+}
+
+@media (max-width: 461px) {
+    .subdetails {
+        .subdtdiv {
+            .coffeelist {
+                .coffeeitem {
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    img {
+                        margin-right: 0;
+                    }
+                    h3 {
+                        margin: 0.5rem 0;
+                    }
+                }
+            } 
         }
     }
 }
@@ -267,6 +413,35 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 355px) {
+    .subdetails {
+        .subdtdiv {
+            .exdiv {
+                .p1short, .p3short {
+                    font-size: 0.89rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 330px) {
+    .subdetails {
+        .subdtdiv {
+            .coffeelist {
+                .coffeeitem {
+                    img {
+                        width: 70px;
+                    }
+                    p {
+                        font-size: 0.9rem !important;
+                    }
+                }
+            } 
         }
     }
 }
