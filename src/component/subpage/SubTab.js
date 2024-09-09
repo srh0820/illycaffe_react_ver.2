@@ -28,14 +28,14 @@ const SubTab = () => {
 
     return (
         <section className={subtabscss.subtab}>
-            <div className="container-1240">
+            <div className={`${subtabscss.subdiv} container-1240`}>
                 <button className={activeTab === 'SubDetails' ? 'active' : ''}
                         onClick={() => handleTabClick('SubDetails')}>
                     상세정보
                 </button>
                 <button className={activeTab === 'SubAs' ? 'active' : ''}
                         onClick={() => handleTabClick('SubAs')}>
-                    교환 및 반품안내
+                    교환 및 반품 <span> 안내 </span>
                 </button>
                 <button className={activeTab === 'SubReview' ? 'active' : ''}
                         onClick={() => handleTabClick('SubReview')}>

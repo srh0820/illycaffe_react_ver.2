@@ -7,16 +7,52 @@
         background-color: transparent;
         color: #333;
         font-family: "Noto Sans KR";
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 600;
         line-height: normal;
         padding: 0;
         transition: 0.3s;
+       
         &:nth-child(-n+3) {
             border-right: 0;
         }
         &:hover {
             color: #D9261C;
+        }
+    }
+}
+
+@media (max-width: 1240px) {
+    .subtab {
+        .subdiv {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .subtab {
+        button {
+            font-size: 0.9rem
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .subtab {
+        button {
+            span {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .subtab {
+        button {
+            font-size: 0.8rem;
         }
     }
 }
