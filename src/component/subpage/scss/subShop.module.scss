@@ -71,7 +71,7 @@
                     font-size: 14px;
                     font-weight: 600;
                 }
-                .p4 {
+                .p4, .shorttext {
                     color: #666;
                     font-size: 13px;
                     font-weight: 400;
@@ -152,5 +152,153 @@
         font-family: "Noto Sans KR";
         font-size: 22px;
         font-weight: 600;
+    }
+}
+
+@media (max-width: 1240px) {
+    .subshop {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 1099px) {
+    .subshop {
+        .pdiv2, .pdiv3, .pdiv4 {
+            .p3 {
+                width: 15% !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .subshop {
+        .pdiv2, .pdiv3, .pdiv4 {
+            flex-direction: column;
+            padding-bottom: 1rem !important;
+            .p3 {
+               padding-bottom: 0.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 974px) {
+    .subshop {
+        .prddiv {
+            h3 {
+                font-size: 1.2rem !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 931px) {
+    .subshop {
+        .prdtext {
+            margin-left: 40px !important;
+        }
+    }
+}
+
+@media (max-width: 881px) {
+    .subshop {
+        .prdtext {
+            margin-left: 20px !important;
+        }
+    }
+}
+
+@media (max-width: 857px) {
+    .subshop {
+        padding-top: 100px;
+        .prddiv {
+            flex-direction: column;
+            .prdimg {
+                padding: 3rem;
+                display: flex;
+                justify-content: center;
+            }
+            .prdtext {
+                width: 100% !important;
+                margin-left: 0 !important;
+                margin-top: 2rem;
+            }
+            .pdiv5 {
+                position: static !important;
+                bottom: auto;
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 447px) { 
+    .subshop {
+        .prddiv {
+            h3 {
+                font-size: 1rem !important;
+            }
+            .pdiv1 {
+                .p2 {
+                    font-size: 1.2rem !important;
+                    padding: 0;
+                }
+            }
+            .pdiv4 {
+                .p4 {
+                    display: none;
+                }
+                .shorttext {
+                    display: block !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 404px) { 
+    .subshop {
+        .prddiv {
+            .pdiv2, .pdiv3, .pdiv4 {
+                .p3 {
+                    width: auto !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 380px) { 
+    .subshop {
+        .prddiv {
+            .hearticon {
+                position: absolute !important;
+                right: 0;
+                top: 23%
+            }
+            .pdiv1 {
+                flex-direction: column;
+            }
+            .numberInput {
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+@media (max-width: 335px) { 
+    .subshop {
+        .prddiv {
+            .numberInput {
+                p {
+                    font-size: 13px;
+                }
+                .numberInput__total {
+                    font-size: 1.2rem;
+                }
+            }
+        }
     }
 }

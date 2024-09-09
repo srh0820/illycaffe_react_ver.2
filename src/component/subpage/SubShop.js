@@ -22,7 +22,7 @@ function SubShop() {
                         <h3 className='mb-0'>
                             250g 아라비카 셀렉션 원두커피 [브라질]
                         </h3>
-                        <HeartIcon className='mx-4'/>
+                        <HeartIcon className={`${subshopscss.hearticon} mx-4`}/>
                     </div>
                     <div className={`${subshopscss.pdiv1} d-flex justify-content-between`}>
                         <p className={subshopscss.p1}>
@@ -55,6 +55,11 @@ function SubShop() {
                             일리 전용 머신만 호환 가능한 점 구매에 참고 부탁드립니다. <br/>
                             질소 포장 특성상 운송 과정에서의 흔들림, 압력, 온도차에 따라 뚜껑이 부풀어 <br/>
                             오를 수 있습니다. 은박 실링이 개봉되지 않았다면 정상 제품입니다.
+                        </p>
+                        <p className={`${subshopscss.shorttext} d-none`}>
+                            일리 전용 머신만 호환 가능합니다. <br/>
+                            질소 포장으로 인해 운송 중 뚜껑이 부풀 수 있으나, <br/>
+                            은박 실링이 개봉되지 않았다면 정상 제품입니다.
                         </p>
                     </div>
    
