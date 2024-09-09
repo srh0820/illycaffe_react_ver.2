@@ -31,3 +31,124 @@
         }
     }
 }
+
+@media (max-width: 1240px) {
+    .subtable {
+        .tableinner {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}
+
+@media (max-width: 959px) {
+    .subtable {
+        .tableinner {
+            .tablediv {
+                padding: 2rem;
+                .table {
+                    tr {
+                        th {
+                            padding: 0.2rem;
+                        }
+                        td {
+                            padding: 0.2em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 918px) {
+    .subtable {
+        .tableinner {
+            .tablediv {
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                .table {
+                    width: 100%;
+                    tr {
+                        th {
+                            width: 35%;
+                            padding: 0.3rem 0;
+                        }
+                        td {
+                            padding: 0.3rem 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 567px) {
+    .subtable {
+        .tableinner {
+            .tablediv {
+                .table {
+                    width: 100%;
+                    tr {
+                        // display: flex;
+                        // flex-direction: column;
+                        th {
+                            font-size: 14px;
+                        }
+                        td {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 526px) {
+    .subtable {
+        .tableinner {
+            .tablediv {
+                .table {
+                    width: 100%;
+                    tr {
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        th {
+                            width: 100%;
+                            padding-top: 0;
+                            padding-bottom: 0.2rem;
+                        }
+                        td {
+                            padding-top: 0;
+                            padding-bottom: 0.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 368px) {
+    .subtable {
+        .tableinner {
+            .tablediv {
+                padding: 1rem;
+                .table {
+                    tr {
+                        th {
+                            font-size: 13px;
+                        }
+                        td {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

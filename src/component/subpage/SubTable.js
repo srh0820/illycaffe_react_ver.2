@@ -6,7 +6,7 @@ import subtabledata from './json/SubTable.json'
 function SubTable() {
     return (
         <section className={subtablescss.subtable}>
-            <div className="container-1240">
+            <div className={`${subtablescss.tableinner} container-1240`}>
                 <p>상품 필수 정보</p>
                 <div className={`${subtablescss.tablediv} d-flex`}>
                     {subtabledata.map((table, index) => (
