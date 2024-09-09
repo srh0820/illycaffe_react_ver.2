@@ -10,6 +10,9 @@
         margin-top: 1rem;
         margin-bottom: 0;
         padding: 0;
+        .textshort {
+            display: none;
+        }
         li {
             position: relative;
             color: #666;
@@ -27,6 +30,44 @@
                 border-radius: 100%;
                 background-color: rgb(48, 48, 51);
                 content: "";
+            }
+        }
+    }
+}
+
+@media (max-width: 1240px) {
+    .subas {
+        .asdiv {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}
+
+@media (max-width: 845px) {
+    .subas {
+        .asdiv {
+            .textlong {
+                display: none;
+            }
+            .textshort {
+                display: block;
+            }
+        }
+    }
+}
+
+@media (max-width: 467px) {
+    .subas {
+        .asdiv {
+            ul {
+                li {
+                    font-size: 0.8rem;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis; 
+                    word-spacing: -1px; 
+                }
             }
         }
     }
