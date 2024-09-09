@@ -8,8 +8,8 @@ import logo from '../../img/Logo.svg';
 function SubDetails() {
     return (
         <section id='SubDetails' className={subdetailsscss.subdetails}>
-            <div className='container-1240'>
-                <div className={`${subdetailsscss.spadiv} d-flex`}>
+            <div className={`${subdetailsscss.subdtdiv} container-1240`}>
+                <div className={`${subdetailsscss.logodiv} d-flex`}>
                     <img src='/img/detailsimg.jpg' alt='일리카페 코리아 인증마크'></img>
                     <div className={`${subdetailsscss.pdiv} d-flex`}>
                         <p className={subdetailsscss.textred}>
@@ -17,12 +17,33 @@ function SubDetails() {
                             관리를 통해 유통되는 제품임 을 보증하기 위하여 한국 독점 파트너사인 <br />
                             일리카페 코리아(주식회사 큐로홀딩스)에게만 제공한 인증 마크입니다. 
                         </p>
+                        <p className={subdetailsscss.textredshort}>
+                            본 로고는 illycaffe S.p.A에서 한국 독점 파트너사인 <br />
+                            일리카페 코리아(큐로홀딩스)에만 제공한 인증 마크입니다.
+                        </p>
+                        <p className={subdetailsscss.textredshort2}>
+                            본 로고는 illycaffe S.p.A에서 <br /> 
+                            한국 독점 파트너사인 <br />
+                            일리카페 코리아(큐로홀딩스)에만 <br /> 
+                            제공한 인증 마크입니다.
+                        </p>
                         <p className={subdetailsscss.textblack}>
                             큐로홀딩스를 통하지 아니하고  병행수입 또는 인터넷 직구 등의 방법을 통하여 <br />
                             유통되는 일리 제품들의 경우, 재활용제품, 유통기한 변조, 내용물 변경 또는 <br />
                             기계 안전 등으로 인하여 문제가 발생했을 시 제조사인 illycaffe S.p.A와 <br />
                             일리카페 코리아(주식회사 큐로홀딩스)를 통해 A/S, 배상 등의 <br />
                             어떠한 보호를 받을 수 없습니다.                        
+                        </p>
+                        <p className={subdetailsscss.textblackshort}>
+                            큐로홀딩스를 통하지 않은 병행수입 또는 직구 제품은 <br /> 
+                            문제 발생 시 제조사 및 일리카페 코리아로부터 <br />
+                            A/S나 배상을 받을 수 없습니다.            
+                        </p>
+                        <p className={subdetailsscss.textblackshort2}>
+                            큐로홀딩스를 통하지 않은 병행수입 <br /> 
+                            또는 직구 제품은 문제 발생 시 <br />
+                            제조사 및 일리카페 코리아로부터 <br />
+                            A/S나 배상을 받을 수 없습니다.            
                         </p>
                     </div>
                 </div>
