@@ -4,7 +4,7 @@
         margin-bottom: 1rem;
         color: #D9261C;
         font-family: "Noto Sans KR";
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 600;
     }
     ul {
@@ -13,19 +13,26 @@
         li {
             color: #D9261C;
             font-family: "Noto Sans KR";
-            font-size: 16px;
-            font-weight: 600;
+            font-size: 15px;
+            font-weight: 400;
             cursor: pointer;
+            &:nth-child(2) {
+                font-weight: 600;
+            }
         } 
     }
     .ul2 {
         margin-top: 1rem;
+        margin-bottom: 2rem;
         li {
             color: #333;
             cursor: pointer;
+            &:nth-child(2) {
+                font-weight: 600;
+            }
         }
     }
-    p {
+    p, span {
         text-align: center;
         color: #333;
         font-family: "Noto Sans KR";
@@ -33,5 +40,29 @@
         font-weight: 400;
         margin-bottom: 2.5rem;
         line-height: normal;
+    }
+    span {
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 1240px) {
+    .SubReview {
+        .innerdiv {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .SubReview {
+        .innerdiv {
+            ul {
+                li {
+                    font-size: 0.9rem;
+                }
+            }
+        }
     }
 }
