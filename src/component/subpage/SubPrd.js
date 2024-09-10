@@ -32,14 +32,9 @@ function SubPrd() {
                     <Swiper
                         spaceBetween={20}
                         slidesPerView={2}
-                        // breakpoints={{
-                        //     480: {
-                        //         slidesPerView: 1, 
-                        //     }
-                        // }}
                         modules={[Autoplay]}
                         loop={true}
-                        speed={5000}
+                        speed={8000}
                         autoplay={{
                             delay: 0,
                             disableOnInteraction: false,
