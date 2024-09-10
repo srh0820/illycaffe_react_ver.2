@@ -1,6 +1,7 @@
 [
     {
       "title": "BRAND",
+      "link": "/Subpage",
       "submenu": [
         { "title": "BRAND", "link": "/Subpage" },
         { "title": "일리커피", "link": "/Subpage" },
@@ -9,35 +10,40 @@
     },
     {
       "title": "ILLY CAFFE",
+      "link": "/StoreLocatorPage",
       "submenu": [
-        { "title": "ILLY CAFFE", "link": "/Subpage" },
-        { "title": "프랜차이즈", "link": "/Subpage" },
-        { "title": "매장찾기", "link": "/Subpage" }
+        { "title": "ILLY CAFFE", "link": "/StoreLocatorPage" },
+        { "title": "프랜차이즈", "link": "/StoreLocatorPage" },
+        { "title": "매장찾기", "link": "/StoreLocatorPage" }
       ]
     },
     {
       "title": "ILLY SHOP",
+      "link": "/Subpage",
       "submenu": [
         { "title": "ILLY SHOP", "link": "/Subpage" },
-        { "title": "매장찾기", "link": "/Subpage" }
+        { "title": "매장찾기", "link": "/StoreLocatorPage" }
       ]
     },
     {
       "title": "UDC",
+      "link": "/StoreLocatorPage",
       "submenu": [
-        { "title": "UDC & 교육철학", "link": "/Subpage" },
-        { "title": "교육내용", "link": "/Subpage" }
+        { "title": "UDC & 교육철학", "link": "/StoreLocatorPage" },
+        { "title": "교육내용", "link": "/StoreLocatorPage" }
       ]
     },
     {
       "title": "BTB",
+      "link": "/StoreLocatorPage",
       "submenu": [
-        { "title": "BTB 사업", "link": "/Subpage" },
-        { "title": "공식대리점", "link": "/Subpage" }
+        { "title": "BTB 사업", "link": "/StoreLocatorPage" },
+        { "title": "공식대리점", "link": "/StoreLocatorPage" }
       ]
     },
     {
       "title": "e-SHOP",
+      "link": "/Subpage",
       "submenu": [
         { "title": "커피제품", "link": "/Subpage" },
         { "title": "캡슐머신", "link": "/Subpage" },
@@ -45,5 +51,5 @@
         { "title": "커피악세서리", "link": "/Subpage" }
       ]
     }
-  ]
+]
   

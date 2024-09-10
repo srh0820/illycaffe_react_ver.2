@@ -13,6 +13,7 @@ import Illy from './illy';
 import Ft from './component/Ft'
 import Quick from './component/Quick';
 import Subpage from './component/subpage/Subpage'
+import StoreLocatorPage from './component/storeLocatorPage/StoreLocatorPage'
 import ScrollToTop from './component/ScrollToTop';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -22,7 +23,8 @@ root.render(
         <Hd />
         <Routes>
             <Route path="/" element={<Illy />} />
-            <Route path="*" element={<Subpage />} />
+            <Route path="/Subpage" element={<Subpage />} />
+            <Route path="/StoreLocatorPage" element={<StoreLocatorPage />} />
         </Routes>
         <Ft />
         <Quick />
