@@ -53,6 +53,15 @@
             .textshort {
                 display: block;
             }
+            ul {
+                li {
+                    width: 100%;
+                    word-spacing: -1px; 
+                    white-space: normal;
+                    overflow-wrap: break-word; /* 단어 단위로 줄바꿈 */
+                    word-break: keep-all;
+                }
+            }
         }
     }
 }
@@ -63,10 +72,6 @@
             ul {
                 li {
                     font-size: 0.8rem;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis; 
-                    word-spacing: -1px; 
                 }
             }
         }
