@@ -5,7 +5,11 @@ function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "auto" // 스크롤 애니메이션 없이 즉시 이동
+    });
   }, [pathname]);
 
   return null;

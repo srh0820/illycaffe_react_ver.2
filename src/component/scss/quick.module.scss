@@ -18,8 +18,9 @@
         margin: 0;
         li{
             width: 100%;
-            span {
-                display: none;
+            button {
+                background-color: transparent;
+                border: none;
             }
         }
     }

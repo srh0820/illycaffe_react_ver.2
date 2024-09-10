@@ -22,14 +22,20 @@ const Quick = () => {
         };
     }, []);
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth', 
+        });
+    };
+
     return (
         <section className={`${Quickscss.quick} ${isVisible ? Quickscss.visible : ''}`}>
             <ul>
                 <li>
-                    <a href="#top">
+                    <button onClick={scrollToTop} aria-label="위로 가기">
                         <Top width="45" height="45" />
-                        <span className="visually-hidden">위로</span>
-                    </a>
+                    </button>
                 </li>
             </ul>
         </section>
