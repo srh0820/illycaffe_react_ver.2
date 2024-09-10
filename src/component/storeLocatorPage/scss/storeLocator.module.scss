@@ -1,5 +1,66 @@
 .storeLocator {
-    margin: 100px 0;
-    font-size: 50px;
-    text-align: center;
+    margin: 150px 0 100px 0; 
+    .infodiv {
+        background: url(../../../../public/img/storelocator.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(18, 16, 19, 0.50);
+            pointer-events: none;
+        }
+        h2 {
+            font-size: 3rem;
+            font-family: "Noto Sans KR";
+            font-weight: 400;
+            line-height: normal;
+            color: #fff;
+            text-align: center;
+            z-index: 9;
+        }
+        p {
+            font-size: 1.2rem;
+            font-family: "Noto Sans KR";
+            font-weight: 300;
+            line-height: normal;
+            letter-spacing: -1.5px;
+            color: #fff;
+            text-align: center;
+            z-index: 9;
+        }
+        ul {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+            padding: 0;
+            z-index: 9;
+            li {
+                border: solid 1px #c8c8c8;
+                padding: 0.4rem;
+                a {
+                    font-size: 1rem;
+                    font-family: "Noto Sans KR";
+                    color: #fff;
+                    font-weight: 400;
+                }
+                &:hover a {
+                    color: #D9261C;
+                }
+                &:nth-child(2),
+                &:nth-child(3) {
+                    border-left: none;
+                }
+            }
+        }
+    }
 }
