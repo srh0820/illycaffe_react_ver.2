@@ -1,4 +1,4 @@
-.SubQna {
+.subqna {
     margin-bottom: 100px;
     .title {
         margin-bottom: 0.5rem;
@@ -9,6 +9,9 @@
     }
     .btndiv {
         margin-bottom: 1rem;
+        .textshort {
+            display: none;
+        }
         p {
             color: #333;
             font-family: "Noto Sans KR";
@@ -19,7 +22,7 @@
         }
         button {
             border: none;
-            padding: 0 2rem;
+            padding: 0.5rem 2rem;
             color: #333;
             background-color: #F3EFE9;
             font-family: "Noto Sans KR";
@@ -70,7 +73,131 @@
             }
             &.textred {
                 color: #D9261C !important;
+                font-weight: 500;
+            }
+            &.textbold {
+                font-weight: 500;
             }
         }
     }    
+}
+
+@media (max-width: 1240px) {
+    .subqna {
+        .innerdiv {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .subqna {
+        .innerdiv {
+            .spanhidden1 {
+                display: none;
+            }
+        }
+        .btndiv {
+            button {
+                padding: 0.5rem 1rem;
+            }
+        }
+        .table {
+            th, td {
+                &:nth-child(5) {
+                    display: none;
+                }
+            }
+        }    
+    }
+}
+
+@media (max-width: 550px) {
+    .subqna {
+        .btndiv {
+            button {
+                padding: 0.5rem 0.7rem;
+            }
+        }
+        .table {
+            th, td {
+                font-size: 14px;
+                &:nth-child(3) {
+                    display: none;
+                }
+            }
+        }    
+    }
+}
+
+@media (max-width: 460px) {
+    .subqna {
+        .innerdiv {
+            p {
+                display: flex;
+                align-items: center;
+            }
+            .spanhidden2 {
+                display: none;
+            }
+        }
+        .btndiv {
+            button {
+                padding: 0.5rem 0.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 432px) {
+    .subqna {
+        .table {
+            th, td {
+                font-size: 14px;
+                &:nth-child(4) {
+                    display: none;
+                }
+            }
+        }   
+    }
+}
+
+@media (max-width: 359px) {
+    .subqna {
+        .innerdiv {
+            p {
+                display: flex;
+                align-items: center;
+            }
+            .spanhidden2 {
+                display: none;
+            }
+        }
+        .btndiv {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            p {
+                display: none
+            }
+            .textshort {
+                display: block;
+                display: flex;
+                align-items: center;
+            }
+            button {
+                font-size: 14px;
+                margin-left: auto;
+                padding: 0.5rem 0.5rem;
+            }
+        }
+        .table {
+            th, td {
+                &:nth-child(1) {
+                    display: none;
+                }
+            }
+        }   
+    }
 }
