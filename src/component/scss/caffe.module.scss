@@ -1,3 +1,74 @@
 .caffe {
-    
+    margin-top: 200px;
+    margin-bottom: 200px;
+    .innerdiv {
+        h3 {
+            color: #333;
+            font-family: "Noto Sans KR";
+            font-size: 29px;
+            font-weight: 500;
+            line-height: 140%;
+            letter-spacing: -2.03px;
+        }
+        p {
+            color: #666;
+            font-family: "Noto Sans KR";
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 140%; 
+            letter-spacing: -0.75px;
+            margin-bottom: 50px;
+        }
+        .tabs {
+            margin-bottom: 75px;
+            button {
+                border-radius: 30px;
+                background-color: transparent;
+                border: 1px solid #D9261C;
+                color: #D9261C;
+                width: 160px;
+                height: 42px;
+                flex-shrink: 0;
+                &:nth-child(1) {
+                    margin-right: 20px;
+                }
+            }
+            .active {
+                color: #fff;
+                background-color: #D9261C;
+            }
+        }
+        .product {
+            display: flex;
+            justify-content: space-between;
+            .imageWrapper {
+                img {
+                    transition: transform 0.3s ease-in-out;
+                }
+                &:hover {
+                    img {
+                        transform: translateY(-15px);
+                    }
+                }
+            }
+            h4 {
+                color: #D9261C;
+                text-align: center;
+                font-family: "Noto Sans KR";
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 140%;
+                letter-spacing: -0.75px;
+            }
+            p {
+                color: #666;
+                text-align: center;
+                font-family: "Noto Sans KR";
+                font-size: 15px;
+                font-weight: 300;
+                line-height: 140%;
+                letter-spacing: -0.75px;
+            }
+        }
+    }
 }
