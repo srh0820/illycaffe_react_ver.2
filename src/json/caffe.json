@@ -1,0 +1,57 @@
+{
+    "drinks": [
+      {
+        "title": "ESPRESSO",
+        "image": "img/caffe1.png",
+        "description": "일리의 균형있고 완벽한 에스프레소"
+      },
+      {
+        "title": "CAPPUCCINO",
+        "image": "img/caffe2.png",
+        "description": "카푸치노 휘핑크림과 초콜릿 가루"
+      },
+      {
+        "title": "CLASSIC",
+        "image": "img/caffe3.png",
+        "description": "프리미엄 원두의 클래식 메뉴"
+      },
+      {
+        "title": "CBEVERAGE",
+        "image": "img/caffe4.png",
+        "description": "일리만의 색다른 논알콜 음료"
+      },
+      {
+        "title": "ILLY SPECIAL",
+        "image": "img/caffe5.png",
+        "description": "일리만의 특색있는 커피 음료"
+      }
+    ],
+    "foods": [
+      {
+        "title": "BAKERY",
+        "image": "img/caffefood1.png",
+        "description": "매일 아침 신선하게 베이킹"
+      },
+      {
+        "title": "CAKE",
+        "image": "img/caffefood2.png",
+        "description": "시즌별 케이크"
+      },
+      {
+        "title": "COOKIE",
+        "image": "img/caffefood3.png",
+        "description": "달콤하고 다양한 쿠키"
+      },
+      {
+        "title": "MINI",
+        "image": "img/caffefood4.png",
+        "description": "마카롱 및 마들렌"
+      },
+      {
+        "title": "SANDWICH",
+        "image": "img/caffefood5.png",
+        "description": "직접 제조하는 샌드위치"
+      }
+    ]
+}
+  
