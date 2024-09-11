@@ -1,22 +1,20 @@
 import Main from './component/Main';
-import Product from './component/Product';
-import Company from './component/Company';
-import Art from './component/Art';
+import Caffe from './component/Caffe';
+import Event from './component/Event';
 import Shop from './component/Shop';
 import Story from './component/Story';
-import Contact from './component/Contact';
+import Service from './component/Service';
 
 
 function Illy() {
   return (
     <>
       <Main></Main>
-      <Product></Product>
-      <Company></Company>
-      <Art></Art>
+      <Caffe></Caffe>
+      <Event></Event>
       <Shop></Shop>
       <Story></Story>
-      <Contact></Contact>
+      <Service></Service>
     </>
   );
 }
