@@ -5,7 +5,8 @@
 이를 위해 공식몰과 공식 홈페이지를 하나의 플랫폼으로 통합하며, UI/UX 개선에 중점을 두고    
 브랜드 일관성을 유지하는 동시에 모든 기기에서 최적화된 디자인을 구현하는 것을 목표로 합니다.
 
-🔗 [ver.1바로가기](https://illycaffe-react.vercel.app)
+🔗 [ver.1 바로가기](https://illycaffe-react.vercel.app)
+🔗 [ver.2 바로가기](https://illycaffe-react-ver2.vercel.app)
 
 <br/>
 
@@ -28,7 +29,7 @@
 
 ![image](https://github.com/user-attachments/assets/1372f149-2408-47a8-90a8-6d6930eb93df)
 
-## 🔗 ver.2
+## 🔗 [ver.2](https://illycaffe-react-ver2.vercel.app)
 두 번째 버전은 일리카페의 고급스러운 이미지를 유지하면서도 소비자에게 친근감을 주는 디자인을 목표로 합니다.   
 타 경쟁사에 비해 접근성이 어려운 점을 개선하기 위해, 사용자 경험을 한층 강화하는 데 중점을 두었습니다.   
 감성적 소통과 따뜻한 브랜드 경험을 중시하며, 일리카페가 소비자들의 커피 생활에 자연스럽게 녹아들도록 노력했습니다.   
