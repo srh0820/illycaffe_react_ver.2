@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import servicescss from './scss/service.module.scss';
 import arrowForwardicon from '../img/arrowForwardIcon.svg'
