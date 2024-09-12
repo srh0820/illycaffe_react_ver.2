@@ -1,3 +1,36 @@
 .main {
-   
+    margin-top: 96px;
+    .swiperContainer {
+        overflow: hidden;
+        .slide1, .slide2, .slide3 {
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 800px;
+        }
+        .slide1 {
+            ul {
+                padding: 0;
+                li {
+
+                }
+            }
+        }
+    }
+    .swiper-pagination {
+        bottom: 10px !important; 
+        text-align: center;
+    }
+    
+    .swiper-pagination-bullet {
+        background-color: #000; 
+        opacity: 0.7;
+    }
+    
+    .swiper-pagination-bullet-active {
+        background-color: #eb0000; 
+        opacity: 1;
+    }
+    
 }
