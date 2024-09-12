@@ -35,7 +35,7 @@ const SubTab = () => {
                 </button>
                 <button className={activeTab === 'SubAs' ? 'active' : ''}
                         onClick={() => handleTabClick('SubAs')}>
-                    교환 및 반품 <span> 안내 </span>
+                    교환 및 반품
                 </button>
                 <button className={activeTab === 'SubReview' ? 'active' : ''}
                         onClick={() => handleTabClick('SubReview')}>
