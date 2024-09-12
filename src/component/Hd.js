@@ -19,9 +19,6 @@ function Hd() {
     const [activeIndex, setActiveIndex] = useState(null); 
     const headerHeight = 96;
 
-    const location = useLocation(); // 현재 위치를 가져옴
-    const isSubpage = location.pathname !== "/"; // 서브페이지 여부 확인
-
     const placeholders = [
         '정기구독 신청',
         '이달의 특가 확인',
@@ -65,7 +62,7 @@ function Hd() {
     }, []);
 
     return (
-        <header id="hd" className={`${hdscss.hd} ${isSubpage ? hdscss.hdSubpage : hdscss.hd}`}>
+        <header id="hd" className={`${hdscss.hd}`}>
             <div className={`${hdscss.hddiv} d-flex justify-content-between align-items-center py-3`}>
                 <h1 className="mx-0 mb-0">
                     <a href="/"><img src={logo} alt="로고" /></a>

@@ -12,15 +12,11 @@
     &:hover {
         background-color: rgb(255, 255, 255, 0.8);
         a {
-            color: #333 !important;
             &:hover {
                 color: #D9261C !important;
             }
         }
         svg {
-            path {
-                fill: #333;
-            }
             &:hover {
                 path {
                     fill: #D9261C;
@@ -59,11 +55,13 @@
                 font-family: "Roboto Condensed";
                 font-size: 1.0625rem;
                 font-weight: 500;
-                color: #ffffff;
+                color: #333;
+                padding: 40px 0;
             }
             &:hover { 
                 ul {     
                     max-height: 180px;
+
                     > a {
                         color: #D9261C;
                     }
@@ -111,6 +109,9 @@
         li {
             cursor: pointer;
             svg {
+                path {
+                    fill: #333;
+                }
                 &:hover {
                     path {
                         fill: #D9261C;
@@ -121,7 +122,7 @@
                 font-family: "Noto Sans KR";
                 font-size: 0.875rem;
                 font-weight: 500;
-                color: #ffffff;
+                color: #333;
                 letter-spacing: -0.85px;
                 &:hover {
                     color: #D9261C;
@@ -151,25 +152,6 @@
     }
     .slideMenu {
         display: none;
-    }
-}
-
-.hdSubpage {
-    a {
-        color: #333 !important;
-        &:hover {
-            color: #D9261C !important;
-        }
-    }
-    svg {
-        path {
-            fill: #333;
-        }
-        &:hover {
-            path {
-                fill: #D9261C;
-            }
-        }
     }
 }
 
