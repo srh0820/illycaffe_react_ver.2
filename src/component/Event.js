@@ -12,7 +12,8 @@ function Event() {
             <div className={`${eventscss.innerdiv} container-1400`}>
                 <div className={eventscss.videodiv}>
                     <video autoPlay loop muted playsInline className={eventscss.video} style={{ width: '700px' }}>
-                        <source src="/img/event.mp4" type="video/mp4" />
+                        <source src="/img/Event.mp4" type="video/mp4" />
+                        사용하시는 브라우저에서는 비디오를 지원하지 않습니다.
                     </video>
                 </div>
                 <div className={eventscss.textdiv}>
