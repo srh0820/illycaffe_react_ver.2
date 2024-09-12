@@ -1,15 +1,16 @@
 [
     {
-      "title": "BRAND",
+      "title": "일리소개",
       "link": "/Subpage",
       "submenu": [
         { "title": "BRAND", "link": "/Subpage" },
         { "title": "일리커피", "link": "/Subpage" },
-        { "title": "뉴스 & 공지", "link": "/Subpage" }
+        { "title": "제휴안내", "link": "/Subpage" },
+        { "title": "뉴스|공지", "link": "/Subpage" }
       ]
     },
     {
-      "title": "ILLY CAFFE",
+      "title": "일리카페",
       "link": "/StoreLocatorPage",
       "submenu": [
         { "title": "ILLY CAFFE", "link": "/StoreLocatorPage" },
@@ -18,7 +19,7 @@
       ]
     },
     {
-      "title": "ILLY SHOP",
+      "title": "일리매장",
       "link": "/Subpage",
       "submenu": [
         { "title": "ILLY SHOP", "link": "/Subpage" },
@@ -26,15 +27,15 @@
       ]
     },
     {
-      "title": "UDC",
+      "title": "일리교육",
       "link": "/StoreLocatorPage",
       "submenu": [
-        { "title": "UDC & 교육철학", "link": "/StoreLocatorPage" },
+        { "title": "교육철학", "link": "/StoreLocatorPage" },
         { "title": "교육내용", "link": "/StoreLocatorPage" }
       ]
     },
     {
-      "title": "BTB",
+      "title": "창업안내",
       "link": "/StoreLocatorPage",
       "submenu": [
         { "title": "BTB 사업", "link": "/StoreLocatorPage" },
@@ -42,12 +43,12 @@
       ]
     },
     {
-      "title": "e-SHOP",
+      "title": "온라인몰",
       "link": "/Subpage",
       "submenu": [
         { "title": "커피제품", "link": "/Subpage" },
         { "title": "캡슐머신", "link": "/Subpage" },
-        { "title": "일리아트컬랙션", "link": "/Subpage" },
+        { "title": "일리아트", "link": "/Subpage" },
         { "title": "커피악세서리", "link": "/Subpage" }
       ]
     }
